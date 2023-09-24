@@ -6,7 +6,13 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            H12 Egzersizleri
+            <img
+              id="logo"
+              src="/logo.png"
+              alt="Logo - H12 Egzersizleri"
+              height="48px"
+            />
+            - H12 Egzersizleri
           </a>
           <button
             className="navbar-toggler"
@@ -24,6 +30,11 @@ export default function Header() {
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" href="/">
                   Anasayfa
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" href="/egzersiz">
+                  Egzersiz Listesi
                 </Link>
               </li>
               <li className="nav-item">

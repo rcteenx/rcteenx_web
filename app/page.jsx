@@ -1,11 +1,25 @@
-import styles from "./page.module.css";
+import Link from "next/link";
 import H1 from "@/components/h1";
 
-export default function Home() {
+import { getLastReview } from "@/lib/egzersiz";
+
+export default async function HomePage() {
+  const review = await getLastReview();
   return (
     <div>
       <H1>Türkçe Karakter Testi</H1>
-      <p>ü ğ ş ç ö i I ı İ</p>
+      <div>
+        <Link href={`/egzersiz/${review.slug}`}>
+          <img
+            src={review.image}
+            alt=""
+            width="320"
+            height="180"
+            className="rounded-t sm:rounded-l sm:rounded-r-none"
+          />
+          <h2>{review.title}</h2>
+        </Link>
+      </div>
     </div>
   );
 }
