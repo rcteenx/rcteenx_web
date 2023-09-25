@@ -1,4 +1,3 @@
-import Link from "next/link";
 import slugify from "slugify";
 
 import { getAllTags } from "@/lib/egzersiz";
@@ -17,9 +16,12 @@ export default async function Tags() {
             key={tag}
             className="d-inline-block tags bg-secondary text-white px-3 py-2 m-1"
           >
-            <Link className="text-white" href={`/etiket/${slugify(tag)}`}>
+            <a
+              className="text-white"
+              href={`/etiket/${slugify(tag)}${process.env.file_ext}`}
+            >
               {tag}
-            </Link>
+            </a>
           </div>
         ))}
       </div>

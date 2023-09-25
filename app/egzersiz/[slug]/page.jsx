@@ -1,4 +1,3 @@
-import Link from "next/link";
 import slugify from "slugify";
 
 import H1 from "@/components/h1";
@@ -30,9 +29,7 @@ export default async function ExPage({ params: { slug } }) {
         <li className="list-group-item">Etiketler</li>
         {review.tags.map((tag) => (
           <li key={tag} className="list-group-item">
-            <Link href={`/etiket/${slugify(tag) + process.env.file_ext}`}>
-              {tag}
-            </Link>
+            <a href={`/etiket/${slugify(tag) + process.env.file_ext}`}>{tag}</a>
           </li>
         ))}
       </ul>

@@ -1,5 +1,4 @@
 import H1 from "@/components/h1";
-import Link from "next/link";
 
 import { getReviews } from "@/lib/egzersiz";
 import SearchResults from "@/components/search-reseults";
@@ -20,9 +19,9 @@ export default async function SearchPage() {
       <ul>
         {reviews.map((review) => (
           <li key={review.slug}>
-            <Link href={`/egzersiz/${review.slug + process.env.file_ext}`}>
+            <a href={`/egzersiz/${review.slug + process.env.file_ext}`}>
               <h2>{review.title}</h2>
-            </Link>
+            </a>
           </li>
         ))}
       </ul>

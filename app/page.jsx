@@ -1,4 +1,3 @@
-import Link from "next/link";
 import H1 from "@/components/h1";
 
 import { getLastReview } from "@/lib/egzersiz";
@@ -9,7 +8,7 @@ export default async function HomePage() {
     <div>
       <H1>Türkçe Karakter Testi</H1>
       <div>
-        <Link href={`/egzersiz/${review.slug + process.env.file_ext}`}>
+        <a href={`/egzersiz/${review.slug + process.env.file_ext}`}>
           <img
             src={review.image}
             alt=""
@@ -18,7 +17,7 @@ export default async function HomePage() {
             className="rounded-t sm:rounded-l sm:rounded-r-none"
           />
           <h2>{review.title}</h2>
-        </Link>
+        </a>
       </div>
     </div>
   );
