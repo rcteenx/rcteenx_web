@@ -20,7 +20,7 @@ export default async function SearchPage() {
       <ul>
         {reviews.map((review) => (
           <li key={review.slug}>
-            <Link href={`/egzersiz/${review.slug}`}>
+            <Link href={`/egzersiz/${review.slug + process.env.file_ext}`}>
               <h2>{review.title}</h2>
             </Link>
           </li>

@@ -9,22 +9,34 @@ export default function Footer() {
             </a>
           </li>
           <li className="nav-item">
-            <a href="/hakkimizda" className="nav-link px-2 text-muted">
+            <a
+              href={`/hakkimda${process.env.file_ext}`}
+              className="nav-link px-2 text-muted"
+            >
               Hakkimizda
             </a>
           </li>
           <li className="nav-item">
-            <a href="/egzersiz" className="nav-link px-2 text-muted">
+            <a
+              href={`/egzersiz${process.env.file_ext}`}
+              className="nav-link px-2 text-muted"
+            >
               Egzersizler
             </a>
           </li>
           <li className="nav-item">
-            <a href="/sss" className="nav-link px-2 text-muted">
+            <a
+              href={`/sss${process.env.file_ext}`}
+              className="nav-link px-2 text-muted"
+            >
               SSS
             </a>
           </li>
           <li className="nav-item">
-            <a href="/iletisim" className="nav-link px-2 text-muted">
+            <a
+              href={`/iletisim${process.env.file_ext}`}
+              className="nav-link px-2 text-muted"
+            >
               İletişim
             </a>
           </li>

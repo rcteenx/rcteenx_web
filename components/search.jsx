@@ -2,12 +2,12 @@
 import { useState } from "react";
 import Link from "next/link";
 
-export default function Search() {
+export default function Search({ ext }) {
   const [search, setSearch] = useState();
   const findSerach = (evt) => {
     evt.preventDefault();
     setSearch(evt.target.value);
-    window.location.href = "/ara?q=" + txtAra.value;
+    window.location.href = "/ara" + ext + "?q=" + txtAra.value;
   };
 
   return (

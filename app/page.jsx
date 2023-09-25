@@ -9,7 +9,7 @@ export default async function HomePage() {
     <div>
       <H1>Türkçe Karakter Testi</H1>
       <div>
-        <Link href={`/egzersiz/${review.slug}`}>
+        <Link href={`/egzersiz/${review.slug + process.env.file_ext}`}>
           <img
             src={review.image}
             alt=""

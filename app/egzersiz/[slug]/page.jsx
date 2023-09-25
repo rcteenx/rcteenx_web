@@ -30,7 +30,9 @@ export default async function ExPage({ params: { slug } }) {
         <li className="list-group-item">Etiketler</li>
         {review.tags.map((tag) => (
           <li key={tag} className="list-group-item">
-            <Link href={`/etiket/${slugify(tag)}`}>{tag}</Link>
+            <Link href={`/etiket/${slugify(tag) + process.env.file_ext}`}>
+              {tag}
+            </Link>
           </li>
         ))}
       </ul>

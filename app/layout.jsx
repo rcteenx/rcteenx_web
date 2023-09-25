@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
           <div className="row">
             <main className="col-lg-8">{children}</main>
             <aside className="col-lg-4">
-              <Search />
+              <Search ext={process.env.file_ext} />
               <Tags />
             </aside>
           </div>

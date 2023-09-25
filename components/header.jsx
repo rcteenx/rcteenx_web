@@ -33,17 +33,27 @@ export default function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" aria-current="page" href="/egzersiz">
+                <Link
+                  className="nav-link"
+                  aria-current="page"
+                  href={`/egzersiz${process.env.file_ext}`}
+                >
                   Egzersiz Listesi
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/hakkimizda">
+                <Link
+                  className="nav-link"
+                  href={`/hakkimizda${process.env.file_ext}`}
+                >
                   Hakkimizda
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/iletisim">
+                <Link
+                  className="nav-link"
+                  href={`/iletisim${process.env.file_ext}`}
+                >
                   İletişim
                 </Link>
               </li>
