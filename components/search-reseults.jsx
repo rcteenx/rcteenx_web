@@ -2,7 +2,7 @@
 import React from "react";
 import { useSearchParams } from "next/navigation";
 
-export default function ReviewsPage({ reviews }) {
+export default function ReviewsPage({ ext, reviews }) {
   const searchParams = useSearchParams();
   const q = searchParams.get("q");
 
@@ -22,7 +22,7 @@ export default function ReviewsPage({ reviews }) {
       <ul>
         {searchedEgz.map((review) => (
           <li key={review.slug}>
-            <a href={`/egzersiz/${review.slug}`}>
+            <a href={`/egzersiz/${review.slug}${ext}`}>
               <h2>{review.title}</h2>
             </a>
           </li>

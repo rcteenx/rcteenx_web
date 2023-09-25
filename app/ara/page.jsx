@@ -13,7 +13,7 @@ export default async function SearchPage() {
     <div className="container">
       <H1>Egzerizler</H1>
       <hr />
-      <SearchResults reviews={{ reviews }} />
+      <SearchResults ext={process.env.file_ext} reviews={{ reviews }} />
       <hr />
       <h2>En Yeni Egzersizler</h2>
       <ul>
