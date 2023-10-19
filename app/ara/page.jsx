@@ -1,7 +1,8 @@
 import H1 from "@/components/h1";
 
 import { getReviews } from "@/lib/egzersiz";
-import SearchResults from "@/components/search-reseults";
+import SearchResults from "@/components/search-results";
+import ExList from "@/components/egzersiz/egzersiz";
 
 export const metadata = {
   title: "Ara",
@@ -16,15 +17,6 @@ export default async function SearchPage() {
       <SearchResults ext={process.env.file_ext} reviews={{ reviews }} />
       <hr />
       <h2>En Yeni Egzersizler</h2>
-      <ul>
-        {reviews.map((review) => (
-          <li key={review.slug}>
-            <a href={`/egzersiz/${review.slug + process.env.file_ext}`}>
-              <h2>{review.title}</h2>
-            </a>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useSearchParams } from "next/navigation";
+import ExList from "@/components/egzersiz/egzersiz";
 
 export default function ReviewsPage({ ext, reviews }) {
   const searchParams = useSearchParams();
@@ -18,16 +19,17 @@ export default function ReviewsPage({ ext, reviews }) {
   });
 
   return (
-    <div>
-      <ul>
-        {searchedEgz.map((review) => (
-          <li key={review.slug}>
-            <a href={`/egzersiz/${review.slug}${ext}`}>
-              <h2>{review.title}</h2>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ExList reviews={searchedEgz} />
+    // <div>
+    //   <ul>
+    //     {searchedEgz.map((review) => (
+    //       <li key={review.slug}>
+    //         <a href={`/egzersiz/${review.slug}${ext}`}>
+    //           <h2>{review.title}</h2>
+    //         </a>
+    //       </li>
+    //     ))}
+    //   </ul>
+    // </div>
   );
 }

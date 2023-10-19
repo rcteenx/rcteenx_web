@@ -7,7 +7,7 @@ export const metadata = {
 export default function HakPage() {
   return (
     <div>
-      <H1>Hakkimizda</H1>
+      <H1>Hakkımızda</H1>
     </div>
   );
 }

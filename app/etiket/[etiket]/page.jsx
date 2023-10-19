@@ -1,6 +1,7 @@
 import H1 from "@/components/h1";
 
 import { getReviewsByTag, getAllTagSlugs } from "@/lib/egzersiz";
+import ExList from "@/components/egzersiz/egzersiz";
 
 // For static export
 export async function generateStaticParams() {
@@ -17,7 +18,8 @@ export default async function TagPage({ params: { etiket } }) {
   return (
     <div>
       <H1>Egzerizler</H1>
-      <ul>
+      <ExList reviews={reviews} />
+      {/* <ul>
         {reviews.map((review) => (
           <li key={review.slug}>
             <a href={`/egzersiz/${review.slug + process.env.file_ext}`}>
@@ -25,7 +27,7 @@ export default async function TagPage({ params: { etiket } }) {
             </a>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 }

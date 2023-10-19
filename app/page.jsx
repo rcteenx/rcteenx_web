@@ -1,18 +1,18 @@
 import H1 from "@/components/h1";
 
-import { getLastReview } from "@/lib/egzersiz";
+import { getLastReviews } from "@/lib/egzersiz";
+import ExList from "@/components/egzersiz/egzersiz";
 
 export default async function HomePage() {
-  const review = await getLastReview();
-  console.log(process.env.file_ext);
+  const reviews = await getLastReviews();
   return (
     <div>
-      <H1>Türkçe Karakter Testi</H1>
+      <H1>H12 Egzersizlerine Hoş Geldiniz</H1>
       <div>
-        <h2 className="text-3xl font-bold text-red-700">xx - {review.title}</h2>
-        <a href={`/egzersiz/${review.slug + process.env.file_ext}`}>
+        <ExList reviews={reviews} />
+        {/* <a href={`/egzersiz/${review.slug + process.env.file_ext}`}>
           <img src={review.image} alt="" width="320" height="180" />
-        </a>
+        </a> */}
       </div>
     </div>
   );
