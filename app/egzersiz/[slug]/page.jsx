@@ -22,13 +22,13 @@ export default async function ExPage({ params: { slug } }) {
   const review = await getReview(slug);
 
   return (
-    <div className="my-5">
+    <div>
       <H1>{review.title}</H1>
       <p>{review.date}</p>
-      <ul className="list-group list-group-horizontal">
-        <li className="list-group-item">Etiketler</li>
+      <ul>
+        <li>Etiketler</li>
         {review.tags.map((tag) => (
-          <li key={tag} className="list-group-item">
+          <li key={tag}>
             <a href={`/etiket/${slugify(tag) + process.env.file_ext}`}>{tag}</a>
           </li>
         ))}
@@ -40,7 +40,6 @@ export default async function ExPage({ params: { slug } }) {
         alt=""
         width="640"
         height="360"
-        className="mb-2 rounded"
       /> */}
       <article dangerouslySetInnerHTML={{ __html: review.body }} />
     </div>

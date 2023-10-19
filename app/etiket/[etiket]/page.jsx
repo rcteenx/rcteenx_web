@@ -15,7 +15,7 @@ export const metadata = {
 export default async function TagPage({ params: { etiket } }) {
   const reviews = await getReviewsByTag(etiket);
   return (
-    <div className="container">
+    <div>
       <H1>Egzerizler</H1>
       <ul>
         {reviews.map((review) => (

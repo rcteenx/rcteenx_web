@@ -9,7 +9,7 @@ export const metadata = {
 export default async function ReviewsPage() {
   const reviews = await getReviews();
   return (
-    <div className="container">
+    <div>
       <H1>Egzerizler</H1>
       <ul>
         {reviews.map((review) => (

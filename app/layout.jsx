@@ -3,7 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 
-import Header from "@/components/header";
+import Header from "@/components/header/header";
 import Footer from "@/components/footer";
 import Tags from "@/components/tags";
 import Search from "@/components/search";
@@ -21,12 +21,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="tr-TR">
-      <body>
+      <body className="bg-light dark:bg-dark">
         <Header />
-        <div className="container">
-          <div className="row">
-            <main className="col-lg-8">{children}</main>
-            <aside className="col-lg-4">
+        <div>
+          <div>
+            <main>{children}</main>
+            <aside>
               <Search ext={process.env.file_ext} />
               <Tags />
             </aside>

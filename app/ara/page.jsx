@@ -10,7 +10,7 @@ export const metadata = {
 export default async function SearchPage() {
   const reviews = await getReviews();
   return (
-    <div className="container">
+    <div>
       <H1>Egzerizler</H1>
       <hr />
       <SearchResults ext={process.env.file_ext} reviews={{ reviews }} />

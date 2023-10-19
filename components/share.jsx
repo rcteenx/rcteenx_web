@@ -22,16 +22,5 @@ export default function ShareLinkButton() {
     return false;
   };
 
-  return (
-    <div>
-      <button
-        onClick={handleClick}
-        className="border px-2 py-1 rounded text-slate-500 text-sm
-                 hover:bg-orange-100 hover:text-slate-700"
-      >
-        {clicked ? "Link copied!" : "Share link"}
-      </button>
-      <i className="bi bi-facebook">12</i>
-    </div>
-  );
+  return <div>SHARE</div>;
 }

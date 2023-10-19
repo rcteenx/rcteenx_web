@@ -11,25 +11,15 @@ export default function Search({ ext }) {
   };
 
   return (
-    <div className="card mt-5">
-      <div className="card-header">
+    <div>
+      <div>
         <h3>Anahtar Kelime ile Çalışma</h3>
       </div>
-      <div className="card-body">
-        <div className="input-group flex-column">
-          <form className="d-flex" role="ara" action="/ara">
-            <input
-              id="txtAra"
-              className="form-control me-2"
-              type="ara"
-              placeholder="Ara"
-              aria-label="Ara"
-            />
-            <button
-              onClick={findSerach}
-              className="btn btn-outline-success"
-              type="submit"
-            >
+      <div>
+        <div>
+          <form>
+            <input id="txtAra" type="ara" placeholder="Ara" aria-label="Ara" />
+            <button onClick={findSerach} type="submit">
               Ara
             </button>
           </form>

@@ -1,47 +1,25 @@
 export default function Footer() {
   return (
-    <div className="container">
-      <footer className="py-3 my-4">
-        <ul className="nav justify-content-center border-bottom pb-3 mb-3">
-          <li className="nav-item">
-            <a href="/" className="nav-link px-2 text-muted">
-              Anasayfa
-            </a>
+    <div>
+      <footer>
+        <ul>
+          <li>
+            <a href="/">Anasayfa</a>
           </li>
-          <li className="nav-item">
-            <a
-              href={`/hakkimda${process.env.file_ext}`}
-              className="nav-link px-2 text-muted"
-            >
-              Hakkimizda
-            </a>
+          <li>
+            <a href={`/hakkimda${process.env.file_ext}`}>Hakkimizda</a>
           </li>
-          <li className="nav-item">
-            <a
-              href={`/egzersiz${process.env.file_ext}`}
-              className="nav-link px-2 text-muted"
-            >
-              Egzersizler
-            </a>
+          <li>
+            <a href={`/egzersiz${process.env.file_ext}`}>Egzersizler</a>
           </li>
-          <li className="nav-item">
-            <a
-              href={`/sss${process.env.file_ext}`}
-              className="nav-link px-2 text-muted"
-            >
-              SSS
-            </a>
+          <li>
+            <a href={`/sss${process.env.file_ext}`}>SSS</a>
           </li>
-          <li className="nav-item">
-            <a
-              href={`/iletisim${process.env.file_ext}`}
-              className="nav-link px-2 text-muted"
-            >
-              İletişim
-            </a>
+          <li>
+            <a href={`/iletisim${process.env.file_ext}`}>İletişim</a>
           </li>
         </ul>
-        <p className="text-center text-muted">
+        <p>
           © 2021 |{" "}
           <a href="https://rhancetin.com/" target="_blank">
             R Han
