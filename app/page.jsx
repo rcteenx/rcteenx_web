@@ -8,6 +8,7 @@ export default async function HomePage() {
     <div>
       <H1>Türkçe Karakter Testi</H1>
       <div>
+        <h2 className="text-3xl font-bold text-red-700">xx - {review.title}</h2>
         <a href={`/egzersiz/${review.slug + process.env.file_ext}`}>
           <img
             src={review.image}
@@ -16,7 +17,6 @@ export default async function HomePage() {
             height="180"
             className="rounded-t sm:rounded-l sm:rounded-r-none"
           />
-          <h2>{review.title}</h2>
         </a>
       </div>
     </div>
