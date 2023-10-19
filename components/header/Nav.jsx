@@ -1,17 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 
 import Link from "next/link";
-import { cx } from "@/utils/index";
 import { MoonIcon, SunIcon } from "@/components/Icons";
 
 import { getHeaderNav } from "@/lib/ui";
 
 const Nav = () => {
   const [click, setClick] = useState(false);
-  const [mode, setMode] = useThemeSwitch();
 
   const nav = getHeaderNav();
 
@@ -73,22 +70,8 @@ const Nav = () => {
             {n.name}
           </Link>
         ))}
-
-        <button
-          onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={cx(
-            "w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1",
-            mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-          )}
-          aria-label="theme-switcher"
-        >
-          {mode === "light" ? (
-            <MoonIcon className={"fill-dark"} />
-          ) : (
-            <SunIcon className={"fill-dark"} />
-          )}
-        </button>
       </nav>
+
       <nav
         className=" w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center hidden sm:flex
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50"
@@ -98,20 +81,6 @@ const Nav = () => {
             {n.name}
           </Link>
         ))}
-        <button
-          onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={cx(
-            "w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1",
-            mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-          )}
-          aria-label="theme-switcher"
-        >
-          {mode === "light" ? (
-            <MoonIcon className={"fill-dark"} />
-          ) : (
-            <SunIcon className={"fill-dark"} />
-          )}
-        </button>
       </nav>
     </div>
   );
