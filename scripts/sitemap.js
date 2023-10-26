@@ -48,7 +48,7 @@ function generateSiteMap(files) {
 
 const sitemap = generateSiteMap(filteredOtherFiles);
 
-fs.writeFile("sitemap.xml", sitemap, (err) => {
+fs.writeFile("out/sitemap.xml", sitemap, (err) => {
   if (err) {
     console.error(err);
   }

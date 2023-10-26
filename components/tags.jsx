@@ -14,7 +14,7 @@ export default async function Tags() {
           <sup>
             <Link
               className="text-xs bg-teal-400 font-semibold mr-2 px-2.5 py-0.5 rounded-lg m-2"
-              href={`/egzersiz/${process.env.file_ext}`}
+              href={`/egzersiz${process.env.file_ext}`}
             >
               Tümü
             </Link>

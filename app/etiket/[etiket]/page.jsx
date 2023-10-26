@@ -18,7 +18,7 @@ export default async function TagPage({ params: { etiket } }) {
   return (
     <div>
       <H1>Egzerizler</H1>
-      <ExList reviews={reviews} />
+      <ExList reviews={reviews} ext={process.env.file_ext} />
       {/* <ul>
         {reviews.map((review) => (
           <li key={review.slug}>

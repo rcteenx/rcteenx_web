@@ -13,7 +13,7 @@ export default async function ReviewsPage() {
   return (
     <div>
       <H1>Egzerizler x</H1>
-      <ExList reviews={reviews} />
+      <ExList reviews={reviews} ext={process.env.file_ext} />
       {/* <ul className="my-4 flex gap-4">
         {reviews.map((review) => (
           <li

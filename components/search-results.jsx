@@ -19,7 +19,7 @@ export default function ReviewsPage({ ext, reviews }) {
   });
 
   return (
-    <ExList reviews={searchedEgz} />
+    <ExList reviews={searchedEgz} ext={ext} />
     // <div>
     //   <ul>
     //     {searchedEgz.map((review) => (

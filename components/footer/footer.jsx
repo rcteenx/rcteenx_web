@@ -60,7 +60,11 @@ const FooterIndex = () => {
         </span>
         <div className="text-center">
           <span className=" text-red-700">&hearts;</span> by{" "}
-          <a href="#" className="underline" target="_blank">
+          <a
+            href="https://github.com/rcteenx"
+            className="underline"
+            target="_blank"
+          >
             rcteenx
           </a>
         </div>
