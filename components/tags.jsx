@@ -1,7 +1,7 @@
 import slugify from "slugify";
 import Link from "next/link";
 
-import { getAllTags } from "@/lib/egzersiz";
+import { getAllTags } from "@/lib/calisma";
 
 export default async function Tags() {
   const tags = await getAllTags();
@@ -10,15 +10,15 @@ export default async function Tags() {
     <div>
       <div>
         <h3 className=" mt-4 font-bold border-b">
-          Çalışmaları Listele
-          <sup>
+          Çalışma Etiketleri
+          {/* <sup>
             <Link
               className="text-xs bg-teal-400 font-semibold mr-2 px-2.5 py-0.5 rounded-lg m-2"
-              href={`/egzersiz${process.env.file_ext}`}
+              href={`/calisma${process.env.file_ext}`}
             >
               Tümü
             </Link>
-          </sup>
+          </sup> */}
         </h3>
         <ul className="flex my-2 gap-2 flex-wrap">
           {tags.map((tag) => (

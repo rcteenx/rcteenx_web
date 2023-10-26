@@ -11,7 +11,7 @@ const Logo = () => {
         <img
           id="logo"
           src="/logo.png"
-          alt="Logo - H12 Egzersizleri"
+          alt="Logo - H12 Çalışmaları"
           className="w-12 h-12"
         />
       </div>

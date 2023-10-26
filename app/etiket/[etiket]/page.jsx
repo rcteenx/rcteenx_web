@@ -1,7 +1,7 @@
 import H1 from "@/components/h1";
 
-import { getReviewsByTag, getAllTagSlugs } from "@/lib/egzersiz";
-import ExList from "@/components/egzersiz/egzersiz";
+import { getReviewsByTag, getAllTagSlugs } from "@/lib/calisma";
+import CalismaList from "@/components/calisma/calisma";
 
 // For static export
 export async function generateStaticParams() {
@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 }
 
 export const metadata = {
-  title: "Egzersiz",
+  title: "Çalışma",
 };
 
 export default async function TagPage({ params: { etiket } }) {
@@ -18,16 +18,7 @@ export default async function TagPage({ params: { etiket } }) {
   return (
     <div>
       <H1>Egzerizler</H1>
-      <ExList reviews={reviews} ext={process.env.file_ext} />
-      {/* <ul>
-        {reviews.map((review) => (
-          <li key={review.slug}>
-            <a href={`/egzersiz/${review.slug + process.env.file_ext}`}>
-              <h2>{review.title}</h2>
-            </a>
-          </li>
-        ))}
-      </ul> */}
+      <CalismaList reviews={reviews} ext={process.env.file_ext} />
     </div>
   );
 }

@@ -1,8 +1,8 @@
 // please update required information
 const siteMetadata = {
-  title: "H12 Egzersizleri",
+  title: "H12 Çalışmaları",
   author: "rcteenx",
-  headerTitle: "H12 Egzersizleri",
+  headerTitle: "H12 Çalışmaları",
   description: "A blog created with Next.js, Tailwind.css and contentlayer.",
   language: "tr-TR",
   theme: "system", // system, dark or light

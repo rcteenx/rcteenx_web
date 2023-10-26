@@ -1,6 +1,6 @@
 import H1 from "@/components/h1";
 
-import { getReviews } from "@/lib/egzersiz";
+import { getReviews } from "@/lib/calisma";
 import SearchResults from "@/components/search-results";
 
 export const metadata = {
@@ -15,7 +15,7 @@ export default async function SearchPage() {
       <hr />
       <SearchResults ext={process.env.file_ext} reviews={{ reviews }} />
       <hr />
-      <h2>En Yeni Egzersizler</h2>
+      <h2>Yeni Çalışmalar</h2>
     </div>
   );
 }

@@ -6,7 +6,7 @@ function getFilesRecursively(directory, skipDir) {
   for (const file of filesInDirectory) {
     const absolute = path.join(directory, file);
     if (fs.statSync(absolute).isDirectory() && file !== skipDir) {
-      console.log(file);
+      // console.log(file);
       getFilesRecursively(absolute);
     } else {
       files.push(absolute);

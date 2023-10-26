@@ -1,9 +1,8 @@
 import slugify from "slugify";
 
 import H1 from "@/components/h1";
-import ShareLinkButton from "@/components/share";
 
-import { getReview, getSlugs } from "@/lib/egzersiz";
+import { getReview, getSlugs } from "@/lib/calisma";
 
 // For static export
 export async function generateStaticParams() {
@@ -38,13 +37,6 @@ export default async function ExPage({ params: { slug } }) {
           ))}
         </ul>
       </div>
-      {/* <ShareLinkButton /> */}
-      {/* <img
-        src={image}
-        alt=""
-        width="640"
-        height="360"
-      /> */}
       <article dangerouslySetInnerHTML={{ __html: review.body }} />
     </div>
   );
