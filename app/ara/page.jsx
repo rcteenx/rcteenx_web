@@ -2,7 +2,6 @@ import H1 from "@/components/h1";
 
 import { getReviews } from "@/lib/egzersiz";
 import SearchResults from "@/components/search-results";
-import ExList from "@/components/egzersiz/egzersiz";
 
 export const metadata = {
   title: "Ara",

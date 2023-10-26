@@ -3,7 +3,10 @@ import Link from "next/link";
 
 const Logo = () => {
   return (
-    <Link href="/" className="flex items-center text-dark dark:text-light">
+    <Link
+      href={`/${"index" + process.env.file_ext}`}
+      className="flex items-center text-dark dark:text-light"
+    >
       <div className="w-12 md:w-16 overflow-hidden">
         <img
           id="logo"

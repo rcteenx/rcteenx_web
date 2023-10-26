@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  DribbbleIcon,
-  GithubIcon,
-  LinkedinIcon,
-  TwitterIcon,
-} from "@/components/Icons";
-import Link from "next/link";
+import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/Icons";
 import siteMetadata from "@/utils/siteMetaData";
 
 const FooterIndex = () => {
@@ -46,12 +40,9 @@ const FooterIndex = () => {
         </a>
       </div>
       <div className=" my-4">
-        <Link
-          href="/sitemap.xml"
-          className="text-center underline my-4 md:my-0"
-        >
+        <a href="/sitemap.xml" className="text-center underline my-4 md:my-0">
           sitemap.xml
-        </Link>
+        </a>
       </div>
 
       <div className="w-full  mt-4 relative font-medium border-t border-solid border-light py-6 px-8 flex  flex-col md:flex-row items-center justify-between">

@@ -15,3 +15,7 @@ Sitemap oluşturma sistemine bakalım - gerekirse geliştirme yaparız.
 - Refaktoring yapalım... kod düzenleme.
 - Görsel ve bütünsel görüntüye bakalım
 - Yeni çalışamlar yazalım.
+
+## Todo
+
+Etiketler, "use client" olduğu için, .html.txt olmuyor. Bunları ön yükleme yapılamıyor... Olmasa da olur... Link kaldırmaya çalışalım!

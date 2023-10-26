@@ -4,14 +4,17 @@
 
 /* Css Base for this project */
 @layer base {
+  body {
+    @apply text-sm md:text-base;
+  }
   h1 {
-    @apply text-2xl font-bold md:text-4xl my-6;
+    @apply text-2xl font-bold md:text-3xl my-6;
   }
   h2 {
-    @apply text-xl font-bold md:text-3xl my-4;
+    @apply text-xl font-bold md:text-2xl my-4;
   }
   h3 {
-    @apply text-lg font-bold md:text-2xl my-2;
+    @apply text-lg font-bold md:text-xl my-2;
   }
   h4,
   h5,
@@ -21,7 +24,11 @@
   p {
     @apply text-base my-1;
   }
-  body {
-    @apply text-sm md:text-base;
+
+  article h2 {
+    @apply text-blue-900;
+  }
+  article h3 {
+    @apply text-blue-800;
   }
 }

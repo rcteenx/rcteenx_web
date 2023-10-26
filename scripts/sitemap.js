@@ -1,36 +1,20 @@
 const fs = require("fs");
 const path = require("path");
-const { resolve } = require("path");
+const { getFilesRecursively } = require("./getFilesRecursively");
 
-const outDirPath = resolve(__dirname, "../out");
+const { resolve } = require("path");
 const domain_url = "https://h12.rhancetin.com";
 
-let files = [];
+const getDirPath = resolve(__dirname, "../out");
+const skipDir = "_next";
 
-const getFilesRecursively = (directory) => {
-  const filesInDirectory = fs.readdirSync(directory);
-  for (const file of filesInDirectory) {
-    const absolute = path.join(directory, file);
-    if (fs.statSync(absolute).isDirectory()) {
-      getFilesRecursively(absolute);
-    } else {
-      files.push(absolute);
-    }
-  }
-};
-
-getFilesRecursively(outDirPath);
+let files = getFilesRecursively(getDirPath, skipDir);
 
 var filteredFiles = files.filter((file) => file.endsWith(".html"));
 
 var filteredOtherFiles = filteredFiles
-  .filter((file) => !file.includes("404"))
-  .filter((file) => !file.includes("index"))
-  .map((file) => file.slice(outDirPath.length + 1));
-
-// filteredOtherFiles.map((file) => {
-//   console.log(file);
-// });
+  .filter((file) => !file.includes("404") && !file.includes("index"))
+  .map((file) => file.slice(getDirPath.length + 1));
 
 function generateSiteMap(files) {
   return `<?xml version="1.0" encoding="UTF-8"?>
