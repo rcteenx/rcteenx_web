@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang={smd.language}>
-      <body className="bg-light max-w-screen-xl m-auto">
+      <body>
         <Header />
         {children}
         <Footer />
