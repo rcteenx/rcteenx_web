@@ -1,9 +1,9 @@
 import slugify from "slugify";
-import { getWork, getSlugs } from "@/lib/works";
+import { getWork, getAllWorkSlugs } from "@/lib/works";
 
 // For static export
 export async function generateStaticParams() {
-  const slugs = await getSlugs();
+  const slugs = await getAllWorkSlugs();
   return slugs.map((slug) => ({ slug }));
 }
 
