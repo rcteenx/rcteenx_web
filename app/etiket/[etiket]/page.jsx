@@ -1,7 +1,7 @@
 import { getWorksByTag } from "@/lib/works";
 import { getAllTagSlugs } from "@/lib/tags";
 
-import CalismaList from "@/components/work/works";
+import WorkList from "@/components/work/works";
 
 // For static export
 export async function generateStaticParams() {
@@ -18,7 +18,7 @@ export default async function TagPage({ params: { etiket } }) {
   return (
     <div>
       <h1>Egzerizler</h1>
-      <CalismaList works={works} ext={process.env.file_ext} />
+      <WorkList works={works} ext={process.env.file_ext} />
     </div>
   );
 }

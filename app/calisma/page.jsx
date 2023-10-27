@@ -1,6 +1,6 @@
 import { getWorks } from "@/lib/works";
 
-import CalismaList from "@/components/work/works";
+import WorkList from "@/components/work/works";
 
 export const metadata = {
   title: "Çalışma",
@@ -11,7 +11,7 @@ export default async function WorksPage() {
   return (
     <div>
       <h1>Bilinçli Farkındalık Çalışmaları</h1>
-      <CalismaList works={works} ext={process.env.file_ext} />
+      <WorkList works={works} ext={process.env.file_ext} />
     </div>
   );
 }
