@@ -1,7 +1,4 @@
 import slugify from "slugify";
-
-import H1 from "@/components/h1";
-
 import { getReview, getSlugs } from "@/lib/calisma";
 
 // For static export
@@ -22,7 +19,7 @@ export default async function ExPage({ params: { slug } }) {
 
   return (
     <div>
-      <H1>{review.title}</H1>
+      <h1>{review.title}</h1>
       <p>{review.date}</p>
       <h4>{review.description}</h4>
       <div className="border-t pt-2 text-right">

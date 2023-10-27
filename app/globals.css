@@ -8,7 +8,7 @@
     @apply text-sm md:text-base;
   }
   h1 {
-    @apply text-2xl font-bold md:text-3xl my-6;
+    @apply my-6 font-sans leading-tight tracking-normal text-2xl font-bold md:text-3xl;
   }
   h2 {
     @apply text-xl font-bold md:text-2xl my-4;

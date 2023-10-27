@@ -1,5 +1,3 @@
-import H1 from "@/components/h1";
-
 import { getReviewsByTag, getAllTagSlugs } from "@/lib/calisma";
 import CalismaList from "@/components/calisma/calisma";
 
@@ -17,7 +15,7 @@ export default async function TagPage({ params: { etiket } }) {
   const reviews = await getReviewsByTag(etiket);
   return (
     <div>
-      <H1>Egzerizler</H1>
+      <h1>Egzerizler</h1>
       <CalismaList reviews={reviews} ext={process.env.file_ext} />
     </div>
   );
