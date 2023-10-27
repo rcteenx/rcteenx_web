@@ -1,4 +1,4 @@
-import { getWorks } from "@/lib/calisma";
+import { getWorks } from "@/lib/works";
 import SearchResults from "@/components/search-results";
 
 export const metadata = {

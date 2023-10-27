@@ -1,5 +1,5 @@
 import slugify from "slugify";
-import { getWork, getSlugs } from "@/lib/calisma";
+import { getWork, getSlugs } from "@/lib/works";
 
 // For static export
 export async function generateStaticParams() {

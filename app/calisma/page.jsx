@@ -1,6 +1,6 @@
-import { getWorks } from "@/lib/calisma";
+import { getWorks } from "@/lib/works";
 
-import CalismaList from "@/components/calisma/calisma";
+import CalismaList from "@/components/work/works";
 
 export const metadata = {
   title: "Çalışma",

@@ -1,5 +1,5 @@
-import { getLastWorks } from "@/lib/calisma";
-import CalismaList from "@/components/calisma/calisma";
+import { getLastWorks } from "@/lib/works";
+import CalismaList from "@/components/work/works";
 
 export default async function HomePage() {
   const works = await getLastWorks();

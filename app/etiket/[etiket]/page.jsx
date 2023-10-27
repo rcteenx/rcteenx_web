@@ -1,7 +1,7 @@
-import { getWorksByTag } from "@/lib/calisma";
+import { getWorksByTag } from "@/lib/works";
 import { getAllTagSlugs } from "@/lib/tags";
 
-import CalismaList from "@/components/calisma/calisma";
+import CalismaList from "@/components/work/works";
 
 // For static export
 export async function generateStaticParams() {

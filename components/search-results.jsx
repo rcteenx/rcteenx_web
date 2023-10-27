@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useSearchParams } from "next/navigation";
-import CalismaList from "@/components/calisma/calisma";
+import CalismaList from "@/components/work/works";
 
 export default function WorksPage({ ext, works }) {
   const searchParams = useSearchParams();
