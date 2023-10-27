@@ -1,4 +1,4 @@
-import { getReviews } from "@/lib/calisma";
+import { getWorks } from "@/lib/calisma";
 import SearchResults from "@/components/search-results";
 
 export const metadata = {
@@ -6,12 +6,12 @@ export const metadata = {
 };
 
 export default async function SearchPage() {
-  const reviews = await getReviews();
+  const works = await getWorks();
   return (
     <div>
       <h1>Egzerizler</h1>
       <hr />
-      <SearchResults ext={process.env.file_ext} reviews={{ reviews }} />
+      <SearchResults ext={process.env.file_ext} works={{ works }} />
       <hr />
       <h2>Yeni Çalışmalar</h2>
     </div>

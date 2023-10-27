@@ -1,5 +1,5 @@
 import slugify from "slugify";
-import { getReview, getSlugs } from "@/lib/calisma";
+import { getWork, getSlugs } from "@/lib/calisma";
 
 // For static export
 export async function generateStaticParams() {
@@ -8,24 +8,24 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params: { slug } }) {
-  const review = await getReview(slug);
+  const work = await getWork(slug);
   return {
-    title: review.title,
+    title: work.title,
   };
 }
 
 export default async function ExPage({ params: { slug } }) {
-  const review = await getReview(slug);
+  const work = await getWork(slug);
 
   return (
     <div>
-      <h1>{review.title}</h1>
-      <p>{review.date}</p>
-      <h4>{review.description}</h4>
+      <h1>{work.title}</h1>
+      <p>{work.date}</p>
+      <h4>{work.description}</h4>
       <div className="border-t pt-2 text-right">
         <h3 className="inline-block">Etiketler</h3>
         <ul className="flex gap-2 border-b justify-end ">
-          {review.tags.map((tag) => (
+          {work.tags.map((tag) => (
             <li className=" bg-teal-200 rounded-lg p-1 my-2" key={tag}>
               <a href={`/etiket/${slugify(tag) + process.env.file_ext}`}>
                 {tag}
@@ -34,7 +34,7 @@ export default async function ExPage({ params: { slug } }) {
           ))}
         </ul>
       </div>
-      <article dangerouslySetInnerHTML={{ __html: review.body }} />
+      <article dangerouslySetInnerHTML={{ __html: work.body }} />
     </div>
   );
 }

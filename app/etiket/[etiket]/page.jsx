@@ -1,4 +1,4 @@
-import { getReviewsByTag } from "@/lib/calisma";
+import { getWorksByTag } from "@/lib/calisma";
 import { getAllTagSlugs } from "@/lib/tags";
 
 import CalismaList from "@/components/calisma/calisma";
@@ -14,11 +14,11 @@ export const metadata = {
 };
 
 export default async function TagPage({ params: { etiket } }) {
-  const reviews = await getReviewsByTag(etiket);
+  const works = await getWorksByTag(etiket);
   return (
     <div>
       <h1>Egzerizler</h1>
-      <CalismaList reviews={reviews} ext={process.env.file_ext} />
+      <CalismaList works={works} ext={process.env.file_ext} />
     </div>
   );
 }

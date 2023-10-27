@@ -3,7 +3,7 @@ import React from "react";
 import { useSearchParams } from "next/navigation";
 import CalismaList from "@/components/calisma/calisma";
 
-export default function ReviewsPage({ ext, reviews }) {
+export default function WorksPage({ ext, works }) {
   const searchParams = useSearchParams();
   const q = searchParams.get("q");
 
@@ -12,11 +12,11 @@ export default function ReviewsPage({ ext, reviews }) {
   }
 
   const searchedEgz = [];
-  reviews.reviews.map((review) => {
-    if (review.title.toLowerCase().includes(q)) {
-      searchedEgz.push(review);
+  works.works.map((work) => {
+    if (work.title.toLowerCase().includes(q)) {
+      searchedEgz.push(work);
     }
   });
 
-  return <CalismaList reviews={searchedEgz} ext={ext} />;
+  return <CalismaList works={searchedEgz} ext={ext} />;
 }

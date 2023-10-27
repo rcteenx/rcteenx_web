@@ -1,18 +1,18 @@
 import React from "react";
 import Link from "next/link";
 
-const CalismaList = ({ reviews, ext }) => {
+const CalismaList = ({ works, ext }) => {
   return (
     <ul className="my-4 flex gap-4">
-      {reviews.map((review) => (
+      {works.map((work) => (
         <li
           className="p-4 border border-teal-100 rounded-lg shadow-dark shadow-sm hover:bg-teal-100"
-          key={review.slug}
+          key={work.slug}
         >
-          <Link href={`/calisma/${review.slug + ext}`}>
-            <h5 className="mb-2 font-bold text-teal-900">{review.title}</h5>
+          <Link href={`/calisma/${work.slug + ext}`}>
+            <h5 className="mb-2 font-bold text-teal-900">{work.title}</h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
-              {review.description}
+              {work.description}
             </p>
           </Link>
         </li>
