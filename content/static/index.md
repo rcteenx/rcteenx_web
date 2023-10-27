@@ -1,7 +1,7 @@
 ---
-title: "H12 Çalışmalarına Hoş Geldiniz"
+title: "Rcteenx Çalışmalarına Hoş geldiniz"
 date: "2023-09-22"
-description: "H12 çalışmalarımız ..."
+description: "Rcteenx çalışmaları ..."
 ---
 
 ## Rcteenx Hakkında

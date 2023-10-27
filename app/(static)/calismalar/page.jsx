@@ -1,14 +1,14 @@
 import { getStaticFile } from "@/lib/static";
 
 export async function generateMetadata() {
-  const sPage = await getStaticFile("hakkimizda");
+  const sPage = await getStaticFile("calismalar");
   return {
     title: sPage.title,
   };
 }
 
 export default async function HakPage() {
-  const sPage = await getStaticFile("hakkimizda");
+  const sPage = await getStaticFile("calismalar");
   return (
     <div>
       <h1>{sPage.title}</h1>

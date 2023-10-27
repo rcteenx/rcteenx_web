@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import smd from "@/content/data/siteMetaData";
 
 const Logo = () => {
   return (
@@ -7,12 +7,12 @@ const Logo = () => {
       <div className="w-12 md:w-16 overflow-hidden">
         <img
           id="logo"
-          src="/logo.png"
-          alt="Logo - H12 Çalışmaları"
-          className="w-12 h-12"
+          src={smd.siteLogo}
+          alt={smd.title}
+          className="w-12 h-12 rounded-full p-1 border border-gray"
         />
       </div>
-      <span className="font-bold text-lg md:text-xl">H12 EGZERSİZLERİ</span>
+      <span className="font-bold hidden lg:flex">{smd.title}</span>
     </Link>
   );
 };

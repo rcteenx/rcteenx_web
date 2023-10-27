@@ -1,13 +1,13 @@
 // please update required information
 const siteMetadata = {
-  title: "H12 Çalışmaları",
+  title: "Rcteenx Çalışmaları",
   author: "rcteenx",
-  headerTitle: "H12 Çalışmaları",
+  headerTitle: "Rcteenx Çalışmaları",
   description:
     "Bilinçli Farkındalık çalışmalarını tanıtmak için hazırlanmış kaynak site.",
   language: "tr-TR",
-  siteUrl: "https://h12.rhancetin.com/",
-  siteLogo: "/logo.png",
+  siteUrl: "https://www.rcteenx.com/",
+  siteLogo: "/rcteenx.jpeg",
   email: "rcteenx@gmail.com",
   socials: [
     { name: "linkedin", link: "https://www.linkedin.com/" },

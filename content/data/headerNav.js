@@ -1,7 +1,7 @@
 export function getHeaderNav() {
   return [
-    { name: "Çalışma", link: "calisma" },
-    { name: "Hakkımızda", link: "hakkimizda" },
+    { name: "Çalışmalar", link: "calismalar" },
+    { name: "Hakkımda", link: "hakkimda" },
     { name: "İletişim", link: "iletisim" },
   ];
 }
