@@ -18,4 +18,4 @@ Sitemap oluşturma sistemine bakalım - gerekirse geliştirme yaparız.
 
 ## Todo
 
-Etiketler, "use client" olduğu için, .html.txt olmuyor. Bunları ön yükleme yapılamıyor... Olmasa da olur... Link kaldırmaya çalışalım!
+- Etiket ana sayfasında ne listeleyelim !? Şu anda 404 veriyor!

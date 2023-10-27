@@ -1,4 +1,6 @@
-import { getReviewsByTag, getAllTagSlugs } from "@/lib/calisma";
+import { getReviewsByTag } from "@/lib/calisma";
+import { getAllTagSlugs } from "@/lib/tags";
+
 import CalismaList from "@/components/calisma/calisma";
 
 // For static export
