@@ -21,9 +21,7 @@ export default function RootLayout({ children }) {
     <html lang={smd.language}>
       <body className="bg-light max-w-screen-xl m-auto">
         <Header />
-        <div className="flex flex-row flex-wrap sm:p-8">
-          <main className="w-full lg:w-3/4 pt-1 px-2">{children}</main>
-        </div>
+        {children}
         <Footer />
       </body>
     </html>

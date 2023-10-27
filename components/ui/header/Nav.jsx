@@ -1,26 +1,22 @@
 import Link from "next/link";
 
-import { getHeaderNav } from "@/content/data/headerNav";
+import { navLinks } from "@/content/data/constants";
 
 const Nav = () => {
-  const nav = getHeaderNav();
-
   return (
     <div>
       {/* Large Screen */}
       <nav
-        className=" w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center flex
+        className="w-max py-3 px-8 border border-solid border-dark rounded-full font-medium
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50"
       >
-        {nav.map((n) => (
-          <Link
-            key={n.name}
-            className="mx-2"
-            href={`/${n.link + process.env.file_ext}`}
-          >
-            {n.name}
-          </Link>
-        ))}
+        <ul className="flex justify-center items-center gap-8">
+          {navLinks.map((n) => (
+            <li key={n.href}>
+              <Link href={`/${n.href + process.env.file_ext}`}>{n.label}</Link>
+            </li>
+          ))}
+        </ul>
       </nav>
     </div>
   );
