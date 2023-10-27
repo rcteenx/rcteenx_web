@@ -1,6 +1,6 @@
 import { getStaticFile } from "@/lib/static";
 import { getLastWorks } from "@/lib/works";
-import WorkList from "@/components/work/works";
+import WorkList from "@/components/repo/work/works";
 
 export async function generateMetadata() {
   const sPage = await getStaticFile("index");

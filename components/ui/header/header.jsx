@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Logo from "@/components/header/Logo";
-import Nav from "@/components/header/Nav";
-import Social from "@/components/header/Social";
+import Logo from "@/components/ui/header/Logo";
+import Nav from "@/components/ui/header/Nav";
+import Social from "@/components/ui/header/Social";
 
 export default function HeaderIndex() {
   return (

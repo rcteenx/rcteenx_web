@@ -1,5 +1,5 @@
 import React from "react";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/Icons";
+import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/ui/Icons";
 import siteMetadata from "@/utils/siteMetaData";
 
 const FooterIndex = () => {

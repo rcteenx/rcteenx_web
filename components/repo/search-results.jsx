@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useSearchParams } from "next/navigation";
-import WorkList from "@/components/work/works";
+import WorkList from "@/components/repo/work/works";
 
 export default function WorksPage({ ext, works }) {
   const searchParams = useSearchParams();

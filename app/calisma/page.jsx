@@ -1,6 +1,6 @@
 import { getWorks } from "@/lib/works";
 
-import WorkList from "@/components/work/works";
+import WorkList from "@/components/repo/work/works";
 
 export const metadata = {
   title: "Çalışma",

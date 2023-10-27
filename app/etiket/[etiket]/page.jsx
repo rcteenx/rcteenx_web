@@ -1,7 +1,7 @@
 import { getWorksByTag } from "@/lib/works";
 import { getAllTagSlugs } from "@/lib/tags";
 
-import WorkList from "@/components/work/works";
+import WorkList from "@/components/repo/work/works";
 
 // For static export
 export async function generateStaticParams() {

@@ -17,7 +17,7 @@ const siteMetadata = {
     { name: "facebook", link: "https://facebook.com" },
     { name: "youtube", link: "https://youtube.com/codebucks" },
   ],
-  locale: "en-US",
+  locale: "tr-TR",
 };
 
 module.exports = siteMetadata;

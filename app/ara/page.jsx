@@ -1,5 +1,5 @@
 import { getWorks } from "@/lib/works";
-import SearchResults from "@/components/search-results";
+import SearchResults from "@/components/repo/search-results";
 
 export const metadata = {
   title: "Ara",

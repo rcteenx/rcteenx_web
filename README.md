@@ -19,3 +19,4 @@ Sitemap oluşturma sistemine bakalım - gerekirse geliştirme yaparız.
 ## Todo
 
 - Etiket ana sayfasında ne listeleyelim !? Şu anda 404 veriyor!
+- Site MetaData kullanalım!
