@@ -31,7 +31,7 @@ const Social = () => {
         aria-label="Check my profile on Github"
         target="_blank"
       >
-        <GithubIcon className="  hover:scale-125 transition-all ease duration-200 dark:fill-light" />
+        <GithubIcon className="  hover:scale-125 transition-all ease duration-200 " />
       </a>
       <a
         href="#"

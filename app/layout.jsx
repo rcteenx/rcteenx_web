@@ -1,7 +1,7 @@
 import "./globals.css";
 
 import { Inter } from "next/font/google";
-import Script from "next/script";
+import smd from "@/content/data/siteMetaData";
 
 import Header from "@/components/ui/header/header";
 import Footer from "@/components/ui/footer/footer";
@@ -20,8 +20,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="tr-TR">
-      <body className="bg-light dark:bg-dark max-w-screen-xl m-auto">
+    <html lang={smd.language}>
+      <body className="bg-light max-w-screen-xl m-auto">
         <Header />
         <div className="flex flex-row flex-wrap sm:p-8">
           <main className="w-full lg:w-3/4 pt-1 px-2">{children}</main>

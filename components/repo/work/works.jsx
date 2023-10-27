@@ -11,9 +11,7 @@ const WorkList = ({ works, ext }) => {
         >
           <Link href={`/calisma/${work.slug + ext}`}>
             <h5 className="mb-2 font-bold text-teal-900">{work.title}</h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">
-              {work.description}
-            </p>
+            <p className="font-normal text-gray-700">{work.description}</p>
           </Link>
         </li>
       ))}

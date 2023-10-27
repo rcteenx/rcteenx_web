@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Logo = () => {
   return (
-    <Link href="/" className="flex items-center text-dark dark:text-light">
+    <Link href="/" className="flex items-center text-dark">
       <div className="w-12 md:w-16 overflow-hidden">
         <img
           id="logo"
@@ -12,9 +12,7 @@ const Logo = () => {
           className="w-12 h-12"
         />
       </div>
-      <span className="font-bold dark:font-semibold text-lg md:text-xl">
-        H12 EGZERSİZLERİ
-      </span>
+      <span className="font-bold text-lg md:text-xl">H12 EGZERSİZLERİ</span>
     </Link>
   );
 };
