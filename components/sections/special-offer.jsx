@@ -8,7 +8,7 @@ const SpecialOffer = () => {
       <div className="flex-1">
         <img
           src={offer.src}
-          alt="Shoe Promotion"
+          alt="Img Promotion"
           width={773}
           height={687}
           className="object-contain w-full"

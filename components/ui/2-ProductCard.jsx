@@ -1,9 +1,9 @@
 import { star } from "@/public/assets/icons";
 
-const PopularProductCard = ({ imgURL, rating, name, price }) => {
+const ProductCard = ({ imgURL, rating, name, price }) => {
   return (
     <div className="flex flex-1 flex-col w-full max-sm:w-full">
-      <img src={imgURL.src} alt={name} className="w-[282px] h-[282px]" />
+      <img src={imgURL.src} alt={name} className="w-64" />
       <div className="mt-8 flex justify-start gap-2.5">
         <img src={star.src} alt="rating icon" width={24} height={24} />
         <p className="font-montserrat text-xl leading-normal text-slate-gray">
@@ -20,4 +20,4 @@ const PopularProductCard = ({ imgURL, rating, name, price }) => {
   );
 };
 
-export default PopularProductCard;
+export default ProductCard;

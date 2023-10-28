@@ -1,10 +1,9 @@
 // please update required information
 const siteMetadata = {
-  title: "Rcteenx Çalışmaları",
+  title: "Rcteenx Freelance Web Developer",
   author: "rcteenx",
-  headerTitle: "Rcteenx Çalışmaları",
-  description:
-    "Bilinçli Farkındalık çalışmalarını tanıtmak için hazırlanmış kaynak site.",
+  headerTitle: "Rcteenx | Freelance Web Developer",
+  description: "Freelance Web Developer.",
   language: "tr-TR",
   siteUrl: "https://www.rcteenx.com/",
   siteLogo: "/rcteenx.jpeg",

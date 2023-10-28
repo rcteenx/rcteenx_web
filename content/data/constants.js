@@ -7,90 +7,112 @@ import {
   twitter,
 } from "@/public/assets/icons";
 import {
-  bigShoe1,
-  bigShoe2,
-  bigShoe3,
+  bigImg1,
+  bigImg2,
+  bigImg3,
   customer1,
   customer2,
-  shoe4,
-  shoe5,
-  shoe6,
-  shoe7,
-  thumbnailShoe1,
-  thumbnailShoe2,
-  thumbnailShoe3,
+  img4,
+  img5,
+  img6,
+  img7,
+  thumbnailImg1,
+  thumbnailImg2,
+  thumbnailImg3,
 } from "@/public/assets/images";
 
 export const navLinks = [
-  { href: "#home", label: "Üst" },
   { href: "#popular", label: "Popüler" },
-  { href: "#about-us", label: "Hakkımda" },
+  { href: "#about-us", label: "Hakkımızda" },
   { href: "#contact-us", label: "İletişim" },
 ];
 
-export const shoes = [
+export const contHero = {
+  coral: "Akılcı Hazır Site Konsepti",
+  fline: "Sizin Hedeflerinize",
+  span: "Çalışan",
+  sline: "Site",
+  desc: "Belirli bir amaç için optimize edilmemiş siteler, fırsat kayıplarına neden oluyor",
+};
+
+export const imgs = [
   {
-    thumbnail: thumbnailShoe1,
-    bigShoe: bigShoe1,
+    thumbnail: thumbnailImg1,
+    bigImg: bigImg1,
   },
   {
-    thumbnail: thumbnailShoe2,
-    bigShoe: bigShoe2,
+    thumbnail: thumbnailImg2,
+    bigImg: bigImg2,
   },
   {
-    thumbnail: thumbnailShoe3,
-    bigShoe: bigShoe3,
+    thumbnail: thumbnailImg3,
+    bigImg: bigImg3,
   },
 ];
 
 export const statistics = [
-  { value: "1k+", label: "Brands" },
-  { value: "500+", label: "Shops" },
-  { value: "250k+", label: "Customers" },
+  { value: "250k+", label: "Ziyaretçi" },
+  { value: "500+", label: "Teklif" },
+  { value: "1k+", label: "Müşteri" },
 ];
 
+export const contProd = {
+  preSpan: "İşinize",
+  span: "Özel",
+  postSpan: "Sayfa Önerileri",
+  desc: "Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value",
+};
 export const products = [
   {
-    imgURL: shoe4,
+    imgURL: img4,
     rating: 4.3,
-    name: "Nike Air Jordan-01",
-    price: "$200.20",
+    name: "Tek Sayfa Tasarım",
+    price: "$250",
   },
   {
-    imgURL: shoe5,
+    imgURL: img5,
     rating: 4.5,
-    name: "Nike Air Jordan-10",
-    price: "$210.20",
+    name: "Mini Site",
+    price: "$350",
   },
   {
-    imgURL: shoe6,
+    imgURL: img6,
     rating: 4.8,
-    name: "Nike Air Jordan-100",
-    price: "$220.20",
+    name: "Blog",
+    price: "$500",
   },
   {
-    imgURL: shoe7,
+    imgURL: img7,
     rating: 4.9,
-    name: "Nike Air Jordan-001",
-    price: "$230.20",
+    name: "Kurumsal",
+    price: "$1,000",
   },
 ];
 
+export const contAbout = {
+  preSpan: "İşinizin Gereği",
+  span1: "Süper",
+  span2: "Kaliteli",
+  postSpan: "Hizmeti Sunuyoruz",
+  desc1:
+    "Ensuring premium comfort and style, our meticulously crafted footwear is designed to elevate your experience, providing you with unmatched quality, innovation, and a touch of elegance.",
+  desc2: "Our dedication to detail and excellence ensures your satisfaction",
+};
 export const services = [
   {
     imgURL: truckFast,
-    label: "Free shipping",
+    label: "Hızlı Kurulum",
     subtext: "Enjoy seamless shopping with our complimentary shipping service.",
   },
   {
     imgURL: shieldTick,
-    label: "Secure Payment",
+    label: "Uyumlu Tasarım",
     subtext:
       "Experience worry-free transactions with our secure payment options.",
   },
   {
     imgURL: support,
-    label: "Love to help you",
+    label: "Performans Odaklı",
     subtext: "Our dedicated team is here to assist you every step of the way.",
   },
 ];
@@ -114,31 +136,30 @@ export const reviews = [
 
 export const footerLinks = [
   {
-    title: "Products",
+    title: "Ürünler",
     links: [
-      { name: "Air Force 1", link: "/" },
-      { name: "Air Max 1", link: "/" },
-      { name: "Air Jordan 1", link: "/" },
-      { name: "Air Force 2", link: "/" },
-      { name: "Nike Waffle Racer", link: "/" },
-      { name: "Nike Cortez", link: "/" },
+      { name: "Hazır Site", link: "/" },
+      { name: "Hazır Site 2", link: "/" },
+      { name: "Hazır Site 3 ", link: "/" },
+      { name: "Hazır Site 4", link: "/" },
+      { name: "Hazır Site 5", link: "/" },
     ],
   },
   {
-    title: "Help",
+    title: "Temel Bilgiler",
     links: [
-      { name: "About us", link: "/" },
-      { name: "FAQs", link: "/" },
-      { name: "How it works", link: "/" },
-      { name: "Privacy policy", link: "/" },
-      { name: "Payment policy", link: "/" },
+      { name: "Hakkımızda", link: "/" },
+      { name: "Sık Sorulan Sorular", link: "/" },
+      { name: "Tasarım Süreci", link: "/" },
+      { name: "100% Garanti", link: "/" },
+      { name: "Ödeme", link: "/" },
     ],
   },
   {
-    title: "Get in touch",
+    title: "Bize Ulaşın",
     links: [
-      { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-      { name: "+92554862354", link: "tel:+92554862354" },
+      { name: "rcteenx@gmail.com", link: "mailto:rcteenx@gmail.com" },
+      { name: "0 (544) 308 74 02", link: "tel:05443087402" },
     ],
   },
 ];

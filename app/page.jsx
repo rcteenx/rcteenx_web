@@ -1,8 +1,8 @@
 import { getStaticFile } from "@/lib/static";
-import Hero from "@/components/sections/hero";
-import PopulerProducts from "@/components/sections/populer-products";
-import SuperQuality from "@/components/sections/about-us";
-import Services from "@/components/sections/services";
+import Hero from "@/components/sections/1-hero";
+import Products from "@/components/sections/2-products";
+import SuperQuality from "@/components/sections/3-about-us";
+import Services from "@/components/sections/4-services";
 import SpecialOffer from "@/components/sections/special-offer";
 import CustomerReviews from "@/components/sections/customer-reviews";
 import Subscribe from "@/components/sections/subscribe";
@@ -21,7 +21,7 @@ export default async function HomePage() {
       {/* <h1>{sPage.title}</h1>
       <h4>{sPage.description}</h4> */}
       <Hero />
-      <PopulerProducts />
+      <Products />
       <SuperQuality />
       <Services />
       <SpecialOffer />
