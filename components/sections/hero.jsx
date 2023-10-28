@@ -6,13 +6,16 @@ import { statistics, shoes } from "@/content/data/constants";
 import Button from "../ui/Button";
 import ShoeCard from "../ui/ShoeCard";
 
+import { bigShoe1 } from "@/public/assets/images";
+import { arrowRight } from "@/public/assets/icons";
+
 const Hero = () => {
-  const [bigShoeImg, setBigShoeImg] = useState("big-shoe1.png");
+  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 
   return (
     <section
       id="home"
-      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
+      className="xl:padding-l -mt-2 wide:padding-r padding-b w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
     >
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x ">
         <p className="text-xl font-montserrat text-coral-red">
@@ -46,7 +49,7 @@ const Hero = () => {
       {/* hidden xl:flex */}
       <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
         <img
-          src={`/assets/images/${bigShoeImg}`}
+          src={bigShoeImg.src}
           alt="shoe colletion"
           width={610}
           height={502}

@@ -4,7 +4,7 @@ import smd from "@/content/data/siteMetaData";
 const Logo = () => {
   return (
     <Link href="/" className="flex items-center text-dark">
-      <div className="w-12 md:w-16 overflow-hidden">
+      <div className="w-12 mt-2 md:w-16 overflow-hidden">
         <img
           id="logo"
           src={smd.siteLogo}

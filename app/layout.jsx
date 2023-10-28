@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang={smd.language}>
+    <html lang={smd.language} className="scroll-smooth">
       <body>
         <Header />
         {children}

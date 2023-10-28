@@ -20,6 +20,7 @@ Sitemap oluşturma sistemine bakalım - gerekirse geliştirme yaparız.
 
 - Etiket ana sayfasında ne listeleyelim !? Şu anda 404 veriyor!
 - Site MetaData kullanalım!
+- Küçük ekran hero görünümü ortalayalım !? Bakalım
 
 ## TodoBASE
 
