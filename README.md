@@ -18,10 +18,10 @@ Sitemap oluşturma sistemine bakalım - gerekirse geliştirme yaparız.
 
 ## Todo
 
-- Etiket ana sayfasında ne listeleyelim !? Şu anda 404 veriyor!
-- Site MetaData kullanalım!
-- Küçük ekran hero görünümü ortalayalım !? Bakalım
+- Responsive - mobil tasarım çalışması!
+  - Önce tüm layout düzenine çalışalım... hem uyumlu hem de bilindik olsun!
+- İçerik düzenleme
+- Alt sayfalar oluşturma
+- Tasarım örneklerine (showcase) link verme...
 
 ## TodoBASE
-
--- buradaki düzenlemeleri h12'ye de çekelim!

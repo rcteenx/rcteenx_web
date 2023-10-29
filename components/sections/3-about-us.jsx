@@ -5,7 +5,7 @@ import Button from "../ui/Button";
 const SuperQuality = () => {
   return (
     <section
-      id="about-us"
+      id="about"
       className=" padding flex justify-between items-center max-lg:flex-col gap-10 w-full max-container"
     >
       <div className="flex flex-1 flex-col">

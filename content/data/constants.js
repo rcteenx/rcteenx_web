@@ -22,17 +22,20 @@ import {
 } from "@/public/assets/images";
 
 export const navLinks = [
-  { href: "#popular", label: "Popüler" },
-  { href: "#about-us", label: "Hakkımızda" },
-  { href: "#contact-us", label: "İletişim" },
+  { href: "#rcteenx", label: "rcteenx" },
+  { href: "#products", label: "Products" },
+  { href: "#about", label: "About" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export const contHero = {
-  coral: "Akılcı Hazır Site Konsepti",
-  fline: "Sizin Hedeflerinize",
-  span: "Çalışan",
-  sline: "Site",
-  desc: "Belirli bir amaç için optimize edilmemiş siteler, fırsat kayıplarına neden oluyor",
+  coral1: "Front-End Web Developer",
+  coral2: "& E-commerce Consultant",
+  fline: "Dijital Kimliğiniz",
+  span: "Hedefinize",
+  sline: "Uyumlu mu?",
+  desc: "Hedefler doğrultusunda bilinçli olarak yapılandırılmamış web sayfaları, fırsat kayıplarına neden oluyor",
+  btn1: "Bilgi Al",
 };
 
 export const imgs = [
@@ -101,22 +104,40 @@ export const contAbout = {
 export const services = [
   {
     imgURL: truckFast,
-    label: "Hızlı Kurulum",
-    subtext: "Enjoy seamless shopping with our complimentary shipping service.",
+    label: "Hızlı Yükleme",
+    subtext:
+      "Web sitenizin hızlı yüklenmesi, hem kullanıcı deneyimi hem de arama motorları performansı için büyük önem taşıyor.",
   },
   {
     imgURL: shieldTick,
     label: "Uyumlu Tasarım",
     subtext:
-      "Experience worry-free transactions with our secure payment options.",
+      "Semantik Html tasarım, arama motoru ve diğer kullanıcıların sitenizin önem ve içeriğini tespitini kolaylaştırır.",
   },
   {
     imgURL: support,
-    label: "Performans Odaklı",
-    subtext: "Our dedicated team is here to assist you every step of the way.",
+    label: "Kullanıcı Dostu",
+    subtext:
+      "Kullanıcı dostu ve mobil uyumlu arayüz, ziyaretçilerin müşteriye dönüşümünü destekler.",
   },
 ];
 
+export const contOffer = {
+  span: "Özel",
+  postSpan: "Teklif",
+  desc1: "Sınırlı bir süre geçerli, çok özel teklifimiz aşağıdadır.",
+  desc2:
+    "Navigate a realm of possibilities designed to fulfill your unique desires, surpassing the loftiest expectations. Your journey with us is nothing short of exceptional.",
+  btn1: "Teklif iste",
+  btn2: "Bilgi al",
+};
+
+export const contReview = {
+  span1: "Müşterilerimiz",
+  postSpan: "Ne Diyor?",
+  desc1:
+    "Müşterilerimizin ürün ve hizmetlerimiz hakkındaki yorumları, birlitke yapacağımız çalışmalara yol gösterebilir",
+};
 export const reviews = [
   {
     imgURL: customer1,
@@ -133,7 +154,6 @@ export const reviews = [
       "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
   },
 ];
-
 export const footerLinks = [
   {
     title: "Ürünler",

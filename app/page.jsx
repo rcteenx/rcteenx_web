@@ -1,21 +1,19 @@
-import { getStaticFile } from "@/lib/static";
+import smd from "@/content/data/siteMetaData";
 import Hero from "@/components/sections/1-hero";
 import Products from "@/components/sections/2-products";
 import SuperQuality from "@/components/sections/3-about-us";
 import Services from "@/components/sections/4-services";
-import SpecialOffer from "@/components/sections/special-offer";
-import CustomerReviews from "@/components/sections/customer-reviews";
-import Subscribe from "@/components/sections/subscribe";
+import Offer from "@/components/sections/5-offer";
+import Reviews from "@/components/sections/6-reviews";
+import Subscribe from "@/components/sections/7-subscribe";
 
 export async function generateMetadata() {
-  const sPage = await getStaticFile("index");
   return {
-    title: sPage.title,
+    title: smd.title,
   };
 }
 
 export default async function HomePage() {
-  const sPage = await getStaticFile("index");
   return (
     <main>
       {/* <h1>{sPage.title}</h1>
@@ -24,8 +22,8 @@ export default async function HomePage() {
       <Products />
       <SuperQuality />
       <Services />
-      <SpecialOffer />
-      <CustomerReviews />
+      <Offer />
+      <Reviews />
       <Subscribe />
     </main>
   );

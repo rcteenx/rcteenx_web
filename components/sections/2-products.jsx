@@ -3,7 +3,7 @@ import ProductCard from "../ui/2-ProductCard";
 
 const Products = () => {
   return (
-    <section id="popular" className="padding max-container max-sm:mt-12 ">
+    <section id="products" className="padding max-container max-sm:mt-12 ">
       <div className="flex flex-col justify-start gap-5">
         <h2 className="text-4xl font-palanquin font-bold">
           {contProd.preSpan}{" "}

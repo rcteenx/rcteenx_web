@@ -4,7 +4,7 @@ import { useState } from "react";
 import { contHero, statistics, imgs } from "@/content/data/constants";
 
 import Button from "../ui/Button";
-import ImgCard from "../ui/ImgCard";
+import ImgCard from "../ui/1-ImgCard";
 
 import { bigImg1 } from "@/public/assets/images";
 
@@ -13,27 +13,30 @@ const Hero = () => {
 
   return (
     <section
-      id="home"
-      className="xl:padding-l mt-16 wide:padding-r padding-b w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
+      id="hero"
+      className="padding-b xl:padding-l mt-16 wide:padding-r w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
     >
-      <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full mt-10 max-xl:padding-x ">
+      <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full mt-12 xl:mt-24 max-xl:padding-x ">
         <p className="text-xl font-montserrat text-coral-red">
-          {contHero.coral}
+          {contHero.coral1}
+          <br />
+          {contHero.coral2}
         </p>
-        <h1 className="mt-8 font-palanquin text-3xl sm:text-4xl md:text-8xl font-bold">
+        <h1 className="mt-8 font-palanquin text-4xl sm:text-4xl md:text-8xl font-bold">
           <span className="xl:bg-white xl:whitespace-nowrap relative z-50 pr-10">
             {contHero.fline}
           </span>
           <br />
           <span className="text-coral-red inline-block mt-3">
             {contHero.span}
-          </span>{" "}
+          </span>
+          <br />
           {contHero.sline}
         </h1>
-        <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
+        <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14">
           {contHero.desc}. <sup>*</sup>
         </p>
-        <Button label="ßirlikte Yapalım" iconURL="/assets/arrow-right.svg" />
+        <Button label={contHero.btn1} iconURL="/assets/arrow-right.svg" />
 
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-8 md:gap-16">
           {statistics.map((stat, index) => (
