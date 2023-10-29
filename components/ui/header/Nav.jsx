@@ -6,10 +6,13 @@ const Nav = () => {
   return (
     <div>
       {/* Large Screen */}
-      <nav className="w-max py-2 px-4 border border-solid border-dark rounded-full font-thin bg-white bg-opacity-40 fixed top-2 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-10">
+      <nav className="fixed py-2 px-4 border border-solid border-dark rounded-full font-thin text-xs md:text-base bg-white bg-opacity-40  top-2 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-10">
         <ul className="flex justify-center items-center space-x-4">
           {navLinks.map((n) => (
-            <li key={n.href} className="first:text-coral-red">
+            <li
+              key={n.href}
+              className="first:text-coral-red border-b border-b-white hover:border-b-coral-red"
+            >
               <Link href={`/${n.href + process.env.file_ext}`}>{n.label}</Link>
             </li>
           ))}

@@ -1,4 +1,5 @@
 const Button = ({
+  href,
   label,
   iconURL,
   backgroundColor,
@@ -6,8 +7,17 @@ const Button = ({
   borderColor,
   fullWidth,
 }) => {
+  let cname =
+    "flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none  rounded-full  border-coral-red ";
+  if (
+    backgroundColor
+      ? (cname += backgroundColor + " ")
+      : (cname += "bg-coral-red ")
+  );
+  if (textColor ? (cname += textColor) : (cname += "text-white"));
+  console.log(cname);
   return (
-    <button className="flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none bg-coral-red rounded-full text-white border-coral-red ">
+    <a className={cname} href={href}>
       {label}
 
       {iconURL && (
@@ -17,7 +27,7 @@ const Button = ({
           className="ml-2 rounded-full bg-white w-8 h-8"
         />
       )}
-    </button>
+    </a>
   );
 };
 

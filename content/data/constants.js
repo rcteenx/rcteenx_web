@@ -33,9 +33,10 @@ export const contHero = {
   coral2: "& E-commerce Consultant",
   fline: "Dijital Kimliğiniz",
   span: "Hedefinize",
-  sline: "Uyumlu mu?",
-  desc: "Hedefler doğrultusunda bilinçli olarak yapılandırılmamış web sayfaları, fırsat kayıplarına neden oluyor",
-  btn1: "Bilgi Al",
+  sline: "Uygun mu?",
+  desc: "Hedefler doğrultusunda bilinçli olarak yapılandırılmamış web sayfaları, dijital dünyada fırsat kayıplarına neden oluyor",
+  btn1: "Bize Ulaşın",
+  btn2: "Bilgi Al",
 };
 
 export const imgs = [
@@ -54,9 +55,9 @@ export const imgs = [
 ];
 
 export const statistics = [
-  { value: "250k+", label: "Ziyaretçi" },
-  { value: "500+", label: "Teklif" },
-  { value: "1k+", label: "Müşteri" },
+  { id: 1, value: "250 k+", label: "Ziyaretçi" },
+  { id: 2, value: "10 k+", label: "Teklif" },
+  { id: 3, value: "1 k+", label: "Müşteri" },
 ];
 
 export const contProd = {

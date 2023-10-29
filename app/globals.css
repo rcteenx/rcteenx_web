@@ -48,6 +48,9 @@
     max-width: 1440px;
     margin: 0 auto;
   }
+  .btn-hero {
+    @apply flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none  rounded-full border-coral-red;
+  }
 
   .input {
     @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
@@ -55,12 +58,15 @@
 }
 
 @layer utilities {
+  .container-p {
+    @apply px-2 sm:px-4 md:px-8 lg:px-12;
+  }
   .padding {
     @apply sm:px-16 px-8 sm:py-24 py-12;
   }
 
   .padding-x {
-    @apply sm:px-16 px-8;
+    @apply sm:px-12 px-2;
   }
 
   .padding-y {

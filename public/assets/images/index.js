@@ -1,4 +1,4 @@
-import bigImg1 from "./bookmark.png";
+import bigImg1 from "./rcteenx-480-400.png";
 import bigImg2 from "./clipboard.png";
 import bigImg3 from "./fylo.png";
 
