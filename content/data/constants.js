@@ -110,8 +110,7 @@ export const contOffer = {
   span: "Özel",
   postSpan: "Teklif",
   desc1: "Sınırlı bir süre geçerli, çok özel teklifimiz aşağıdadır.",
-  desc2:
-    "Navigate a realm of possibilities designed to fulfill your unique desires, surpassing the loftiest expectations. Your journey with us is nothing short of exceptional.",
+  desc2: "2023 yılı sonuna kadar, vereceğiniz siparişlerde 30% indirim.",
   btn1: "Teklif iste",
   btn2: "Bilgi al",
 };

@@ -4,24 +4,16 @@ import { offer } from "@/public/assets/images";
 
 const Offer = () => {
   return (
-    <section className="container-p pt-16 md:pt-24 flex justify-between items-center max-xl:flex-col-reverse gap-10 max-container">
-      <div className="flex-1">
-        <img
-          src={offer.src}
-          alt="Img Promotion"
-          width={773}
-          height={687}
-          className="object-contain w-full"
-        />
-      </div>
-      <div className="flex flex-1 flex-col">
-        <h2 className="text-4xl font-palanquin font-bold">
+    <section className="container mx-auto container-p pt-16 md:pt-24 flex items-center max-xl:flex-col-reverse gap-10 max-container">
+      <img src={offer.src} alt="Img Promotion" width={640} height={480} />
+      <div className="flex flex-col justify-center gap-1">
+        <h2 className="text-4xl font-palanquin">
           <span className="text-coral-red">{contOffer.span}</span>{" "}
           {contOffer.postSpan}
         </h2>
-        <p className="mt-4 info-text">{contOffer.desc1}</p>
-        <p className="mt-6 info-text">{contOffer.desc2}</p>
-        <div className="flex flex-row space-x-4">
+        <p className="info-text">{contOffer.desc1}</p>
+        <p className="info-text">{contOffer.desc2}</p>
+        <div className="mt-4 flex flex-row space-x-4">
           <a href="#" className="btn-hero bg-coral-red text-white">
             {contOffer.btn1}
             <img
@@ -39,16 +31,6 @@ const Offer = () => {
             />
           </a>
         </div>
-
-        {/* <div className="mt-11 flex flex-wrap gap-4">
-          <Button label={contOffer.btn1} iconURL={arrowRight.src} />
-          <Button
-            label={contOffer.btn2}
-            backgroundColor="bg-white"
-            borderColor="border-slate-gray"
-            textColor="text-slate-gray"
-          />
-        </div> */}
       </div>
     </section>
   );

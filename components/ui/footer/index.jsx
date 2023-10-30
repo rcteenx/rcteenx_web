@@ -4,8 +4,8 @@ import FooterLinks from "@/components/ui/footer/FooterLinks";
 
 const Footer = () => {
   return (
-    <footer className="bg-black padding-x padding-t pb-4 max-container  rounded-t-2xl">
-      <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
+    <footer className="container mx-auto container-p bg-black sm:rounded-t-2xl">
+      <div className="px-2 pt-12 flex justify-between items-start gap-12 flex-wrap max-lg:flex-col">
         <FooterInfo />
         <FooterLinks />
       </div>

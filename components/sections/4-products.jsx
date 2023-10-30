@@ -3,7 +3,10 @@ import ProductCard from "../ui/4-ProductCard";
 
 const Products = () => {
   return (
-    <section id="products" className="container-p pt-16 md:pt-24 text-center">
+    <section
+      id="products"
+      className="container mx-auto container-p pt-16 md:pt-24 text-center"
+    >
       <h2 className="text-4xl font-palanquin font-bold">
         {contProd.preSpan}{" "}
         <span className="text-coral-red"> {contProd.span} </span>{" "}

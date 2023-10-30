@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="container-p mt-16 md:mt-24 flex flex-col xl:flex-row justify-center gap-0"
+      className="container mx-auto container-p mt-16 md:mt-24 flex flex-col xl:flex-row justify-center gap-0"
     >
       <div className="xl:w-1/2">
         <p className="my-8 lg:my-8 text-xs md:text-lg font-montserrat text-coral-red">
@@ -41,7 +41,7 @@ const Hero = () => {
             {contHero.btn2}
             <img
               src={info.src}
-              alt="arrow right icon"
+              alt="info icon"
               className="ml-2 rounded-full bg-white w-8 h-8"
             />
           </a>

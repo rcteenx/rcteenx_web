@@ -15,7 +15,7 @@ export async function generateMetadata() {
 
 export default async function HomePage() {
   return (
-    <main className="container mx-auto">
+    <main className="">
       {/* <h1>{sPage.title}</h1>
       <h4>{sPage.description}</h4> */}
       <Hero />
