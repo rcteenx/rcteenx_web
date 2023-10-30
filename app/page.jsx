@@ -1,4 +1,8 @@
 import smd from "@/content/data/siteMetaData";
+
+import Header from "@/components/ui/header/home";
+import Footer from "@/components/ui/footer";
+
 import Hero from "@/components/sections/1-hero";
 import Products from "@/components/sections/4-products";
 import SuperQuality from "@/components/sections/3-about-us";
@@ -15,16 +19,20 @@ export async function generateMetadata() {
 
 export default async function HomePage() {
   return (
-    <main className="">
-      {/* <h1>{sPage.title}</h1>
+    <>
+      <Header />
+      <main>
+        {/* <h1>{sPage.title}</h1>
       <h4>{sPage.description}</h4> */}
-      <Hero />
-      <Services />
-      <SuperQuality />
-      <Products />
-      <Offer />
-      <Reviews />
-      <Subscribe />
-    </main>
+        <Hero />
+        <Services />
+        <SuperQuality />
+        <Products />
+        <Offer />
+        {/* <Reviews />
+      <Subscribe /> */}
+      </main>
+      <Footer />
+    </>
   );
 }

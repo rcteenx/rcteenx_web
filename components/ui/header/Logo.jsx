@@ -1,7 +1,7 @@
 import Link from "next/link";
 import smd from "@/content/data/siteMetaData";
 
-const Logo = () => {
+const HeaderLogo = () => {
   return (
     <Link id="rcteenx" href="/" className="relative">
       <div className="absolute top-2 md:top-3 w-10 md:w-16 xl:w-24 z-50">
@@ -15,4 +15,4 @@ const Logo = () => {
   );
 };
 
-export default Logo;
+export default HeaderLogo;

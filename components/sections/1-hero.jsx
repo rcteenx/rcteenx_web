@@ -6,10 +6,10 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="container mx-auto container-p mt-16 md:mt-24 flex flex-col xl:flex-row justify-center gap-0"
+      className="container mx-auto container-p mt-20 lg:my-32 flex flex-col xl:flex-row justify-center gap-0"
     >
       <div className="xl:w-1/2">
-        <p className="my-8 lg:my-8 text-xs md:text-lg font-montserrat text-coral-red">
+        <p className="mb-8 text-xs md:text-lg font-montserrat text-coral-red">
           {contHero.coral1}
           <br />
           {contHero.coral2}

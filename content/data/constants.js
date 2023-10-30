@@ -16,11 +16,17 @@ import {
   img7,
 } from "@/public/assets/images";
 
-export const navLinks = [
+export const navLinksHome = [
   { href: "#rcteenx", label: "rcteenx" },
   { href: "#services", label: "Hedefler" },
-  { href: "#about", label: "Hakkımızda" },
-  { href: "#contact", label: "İletişim" },
+  { href: "#about", label: "Hakkımda" },
+  { href: "#footer", label: "İletişim" },
+];
+
+export const navLinksStatic = [
+  { href: "calismalar", label: "Çalışmalar" },
+  { href: "hakkimda", label: "Hakkımda" },
+  { href: "iletisim", label: "İletişim" },
 ];
 
 export const contHero = {

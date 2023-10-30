@@ -4,7 +4,7 @@ const Subscribe = () => {
   return (
     <section
       id="contact"
-      className="container mx-auto container-p  py-8 my-16 text-center"
+      className="container mx-auto container-p py-8 my-16 text-center"
     >
       <h3 className="text-4xl font-palanquin font-bold">
         Haberler için&nbsp;
