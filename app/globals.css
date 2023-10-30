@@ -49,7 +49,7 @@
     margin: 0 auto;
   }
   .btn-hero {
-    @apply flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none  rounded-full border-coral-red;
+    @apply flex justify-center items-center gap-2 px-6 py-2 md:px-12 md:py-4 border font-montserrat text-lg md:font-semibold leading-none rounded-full border-coral-red;
   }
 
   .input {

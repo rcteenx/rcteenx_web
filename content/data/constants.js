@@ -7,31 +7,26 @@ import {
   twitter,
 } from "@/public/assets/icons";
 import {
-  bigImg1,
-  bigImg2,
-  bigImg3,
   customer1,
   customer2,
-  img4,
-  img5,
-  img6,
+  web1,
+  web2,
+  web3,
+  web4,
   img7,
-  thumbnailImg1,
-  thumbnailImg2,
-  thumbnailImg3,
 } from "@/public/assets/images";
 
 export const navLinks = [
   { href: "#rcteenx", label: "rcteenx" },
-  { href: "#products", label: "Products" },
-  { href: "#about", label: "About" },
-  { href: "#contact", label: "Contact" },
+  { href: "#services", label: "Hedefler" },
+  { href: "#about", label: "Hakkımızda" },
+  { href: "#contact", label: "İletişim" },
 ];
 
 export const contHero = {
   coral1: "Front-End Web Developer",
   coral2: "& E-commerce Consultant",
-  fline: "Dijital Kimliğiniz",
+  fline: "Dijital Varlıklarınız",
   span: "Hedefinize",
   sline: "Uygun mu?",
   desc: "Hedefler doğrultusunda bilinçli olarak yapılandırılmamış web sayfaları, dijital dünyada fırsat kayıplarına neden oluyor",
@@ -39,87 +34,75 @@ export const contHero = {
   btn2: "Bilgi Al",
 };
 
-export const imgs = [
-  {
-    thumbnail: thumbnailImg1,
-    bigImg: bigImg1,
-  },
-  {
-    thumbnail: thumbnailImg2,
-    bigImg: bigImg2,
-  },
-  {
-    thumbnail: thumbnailImg3,
-    bigImg: bigImg3,
-  },
-];
-
 export const statistics = [
   { id: 1, value: "250 k+", label: "Ziyaretçi" },
   { id: 2, value: "10 k+", label: "Teklif" },
   { id: 3, value: "1 k+", label: "Müşteri" },
 ];
 
-export const contProd = {
-  preSpan: "İşinize",
-  span: "Özel",
-  postSpan: "Sayfa Önerileri",
-  desc: "Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value",
-};
-export const products = [
+export const services = [
   {
-    imgURL: img4,
-    rating: 4.3,
-    name: "Tek Sayfa Tasarım",
-    price: "$250",
+    imgURL: truckFast,
+    label: "1- Ziyaretçi",
+    subtext:
+      "Web siteni aylık ortalama kaç kişi ziyaret ediyor, hangi kanallardan geliyor?",
   },
   {
-    imgURL: img5,
-    rating: 4.5,
-    name: "Mini Site",
-    price: "$350",
+    imgURL: shieldTick,
+    label: "2- Etkileşim",
+    subtext:
+      "Ziyaretçilerin sitenizde kalış süresi ve ortalama sayfa dolaşma sayısı?",
   },
   {
-    imgURL: img6,
-    rating: 4.8,
-    name: "Blog",
-    price: "$500",
-  },
-  {
-    imgURL: img7,
-    rating: 4.9,
-    name: "Kurumsal",
-    price: "$1,000",
+    imgURL: support,
+    label: "3- Müşteri",
+    subtext:
+      "Dijital kaynaklardan size ulaşan kaç kişi, para kazandıran müşteriye dönüşüyor?",
   },
 ];
 
 export const contAbout = {
   preSpan: "İşinizin Gereği",
-  span1: "Süper",
-  span2: "Kaliteli",
+  span1: "Destek",
+  span2: "& Bakım",
   postSpan: "Hizmeti Sunuyoruz",
   desc1:
-    "Ensuring premium comfort and style, our meticulously crafted footwear is designed to elevate your experience, providing you with unmatched quality, innovation, and a touch of elegance.",
-  desc2: "Our dedication to detail and excellence ensures your satisfaction",
+    "Pek çok amaçla kullanılan web sitesi, oldukça sık güncellenmek ve değiştirilmek zorunda. İşin gereği ve hedeflerin tutması için yapılması gereken bu düzenlemelerin sağlıklı olması için framework (çerçeve) ihtiyacı ortaya çıkmıştır.",
+  desc2:
+    "Eğer belirli bir framework üzerine kurulu olmayan bir sistem kullanıyorsanız, bir süre sonra düzenlemeleriniz sıkıntı yaratmaya başlar.",
+  btn: "Detayları incele",
 };
-export const services = [
+
+export const contProd = {
+  preSpan: "Hedefinize",
+  span: "Özel",
+  postSpan: "Sayfa Türleri",
+  desc: "Hedefinize uygun alternatif web sayfa türleri ve başlangıç fiyatları aşağıda belirtilmiştir.",
+};
+export const products = [
   {
-    imgURL: truckFast,
-    label: "Hızlı Yükleme",
-    subtext:
-      "Web sitenizin hızlı yüklenmesi, hem kullanıcı deneyimi hem de arama motorları performansı için büyük önem taşıyor.",
+    imgURL: web1,
+    rating: 4.3,
+    name: "Tek Sayfa",
+    price: "$250",
   },
   {
-    imgURL: shieldTick,
-    label: "Uyumlu Tasarım",
-    subtext:
-      "Semantik Html tasarım, arama motoru ve diğer kullanıcıların sitenizin önem ve içeriğini tespitini kolaylaştırır.",
+    imgURL: web2,
+    rating: 4.5,
+    name: "Mini Site",
+    price: "$350",
   },
   {
-    imgURL: support,
-    label: "Kullanıcı Dostu",
-    subtext:
-      "Kullanıcı dostu ve mobil uyumlu arayüz, ziyaretçilerin müşteriye dönüşümünü destekler.",
+    imgURL: web3,
+    rating: 4.8,
+    name: "Blog",
+    price: "$500",
+  },
+  {
+    imgURL: web4,
+    rating: 4.9,
+    name: "Kurumsal",
+    price: "$1,000",
   },
 ];
 

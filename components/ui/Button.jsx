@@ -8,14 +8,13 @@ const Button = ({
   fullWidth,
 }) => {
   let cname =
-    "flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none  rounded-full  border-coral-red ";
+    "flex justify-center items-center gap-2  px-7 py-4 border font-montserrat text-lg leading-none  rounded-full  border-coral-red ";
   if (
     backgroundColor
       ? (cname += backgroundColor + " ")
       : (cname += "bg-coral-red ")
   );
   if (textColor ? (cname += textColor) : (cname += "text-white"));
-  console.log(cname);
   return (
     <a className={cname} href={href}>
       {label}

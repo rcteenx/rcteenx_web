@@ -1,42 +1,30 @@
-import bigImg1 from "./rcteenx-480-400.png";
-import bigImg2 from "./clipboard.png";
-import bigImg3 from "./fylo.png";
+import rcHero from "./rcteenx-480-400.png";
+import siteLogo from "./rcteenx.jpeg";
+import footerLogo from "./rcteenx.jpeg";
+import ziyaretci from "./ziyaretci.png";
+import about from "./about.png";
 
 import customer1 from "./customer1.jpeg";
 import customer2 from "./customer2.svg";
 
-import footerLogo from "./rcteenx.jpeg";
-import headerLogo from "./header-logo.svg";
-
 import offer from "./offer.svg";
 
-import img4 from "./bookmark.png";
-import img5 from "./clipboard.png";
-import img6 from "./fylo.png";
-import img7 from "./bookmark.png";
-import img8 from "./fylo.png";
-
-import thumbnailBackground from "./thumbnail-background.svg";
-import thumbnailImg1 from "./bookmark.png";
-import thumbnailImg2 from "./clipboard.png";
-import thumbnailImg3 from "./fylo.png";
+import web1 from "./single-page.png";
+import web2 from "./mini-site.png";
+import web3 from "./blog.png";
+import web4 from "./kurumsal.png";
 
 export {
-  bigImg1,
-  bigImg2,
-  bigImg3,
+  rcHero,
+  siteLogo,
+  footerLogo,
+  ziyaretci,
+  about,
   customer1,
   customer2,
-  footerLogo,
-  headerLogo,
   offer,
-  img4,
-  img5,
-  img6,
-  img7,
-  img8,
-  thumbnailBackground,
-  thumbnailImg1,
-  thumbnailImg2,
-  thumbnailImg3,
+  web1,
+  web2,
+  web3,
+  web4,
 };

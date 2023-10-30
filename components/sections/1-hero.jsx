@@ -1,16 +1,8 @@
-"use client";
-import { useState } from "react";
-
 import { contHero, statistics } from "@/content/data/constants";
 import { info, arrowRight } from "@/public/assets/icons";
-
-import Button from "../ui/Button";
-
-import { bigImg1 } from "@/public/assets/images";
+import { rcHero } from "@/public/assets/images";
 
 const Hero = () => {
-  const [bigImg, setBigImg] = useState(bigImg1);
-
   return (
     <section
       id="hero"
@@ -70,7 +62,7 @@ const Hero = () => {
       {/* hidden xl:flex  bg-hero */}
       <div className="xl:w-1/2 flex flex-col justify-end items-center border bg-[url('/assets/images/ziyaretci.png')] bg-cover relative rounded-2xl">
         <img
-          src={bigImg.src}
+          src={rcHero.src}
           alt="img colletion"
           width={480}
           height={400}
@@ -80,33 +72,6 @@ const Hero = () => {
           Ziyaretçilerinizin yüzde kaçı sizinle temas kuruyor ve müşteriniz
           oluyor?
         </p>
-
-        {/* <blockquote className="px-4 md:px-8 py-2 my-10 text-center bg-white/20">
-          "Dijital dünyada, doğru kararlar yoktur. Yanlış kararlar ve daha
-          yanlış kararlar vardır!"
-        </blockquote> */}
-        {/* <div className="px-4 md:px-8 py-2 my-10 bg-white/20 w-full">
-          <h2>Mini Araştırma</h2>
-          <ul>
-            <li className=" text-2xl">
-              "Sitenize günde kaç ziyaretçi geliyor?"
-            </li>
-            <li>Bunların kaçı sizinle temas kuruyor?</li>
-            <li>Kaçı, para kazandıran müşteriye dönüyor?</li>
-          </ul>
-        </div> */}
-
-        {/* <div className="flex justify-around gap-2 sm:gap-6">
-          {imgs.map((image, index) => (
-            <ImgCard
-              key={index}
-              index={index}
-              imgURL={image}
-              changeBigImgImage={(img) => setBigImg(img)}
-              bigImg={bigImg}
-            />
-          ))}
-        </div> */}
       </div>
     </section>
   );
