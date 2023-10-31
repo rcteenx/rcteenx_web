@@ -2,7 +2,7 @@ const WorkCard = ({ imgURL, label, href }) => {
   return (
     <div className="border rounded-xl">
       <a href={href} target="_blank">
-        <div className=" md:w-[22rem] h-72 overflow-y-auto scrollbar-none">
+        <div className=" md:w-[22rem] h-[19rem] overflow-y-auto scrollbar-none">
           <img
             src={imgURL}
             alt={label}

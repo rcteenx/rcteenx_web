@@ -7,6 +7,7 @@ import {
   shortly,
   tesla_ui_clone,
   testimonial,
+  webees_tech,
 } from "@/public/assets/calismalar/tutorials";
 import {
   emailSubscribe,
@@ -50,6 +51,12 @@ export const tutorials = [
         folder: "testimonial",
         image: testimonial,
         label: "Testimonial",
+      },
+      {
+        id: 8,
+        folder: "webees-tech",
+        image: webees_tech,
+        label: "Webees Tech",
       },
     ],
   },
