@@ -1,4 +1,7 @@
 import { getStaticFile } from "@/lib/static";
+
+import { bookmark } from "@/public/assets/images";
+
 import HeaderStaticIndex from "@/components/ui/header/static";
 import Footer from "@/components/ui/footer";
 
@@ -18,7 +21,6 @@ export default async function Page() {
         <section>
           <h4>{sPage.description}</h4>
           <h1 className="">{sPage.title}</h1>
-          <article dangerouslySetInnerHTML={{ __html: sPage.body }} />
         </section>
       </main>
       <Footer />
