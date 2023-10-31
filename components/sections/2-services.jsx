@@ -1,4 +1,4 @@
-import { services } from "@/content/data/constants";
+import { services } from "@/content/data";
 import ServiceCard from "../ui/2-ServiceCard";
 
 const Services = () => {

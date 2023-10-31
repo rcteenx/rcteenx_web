@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { navLinksHome } from "@/content/data/constants";
+import { navLinksHome } from "@/content/data";
 
 export default function HeaderHomeNav() {
   return (

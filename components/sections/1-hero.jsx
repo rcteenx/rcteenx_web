@@ -1,4 +1,4 @@
-import { contHero, statistics } from "@/content/data/constants";
+import { contHero, statistics } from "@/content/data";
 import { info, arrowRight } from "@/public/assets/icons";
 import { rcHero } from "@/public/assets/images";
 

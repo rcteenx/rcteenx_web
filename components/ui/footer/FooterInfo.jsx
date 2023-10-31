@@ -1,5 +1,5 @@
 import { footerLogo } from "@/public/assets/images";
-import { socialMedia } from "@/content/data/constants";
+import { socialMedia } from "@/content/data";
 
 const FooterInfo = () => {
   return (

@@ -1,6 +1,6 @@
-import { contReview } from "@/content/data/constants";
+import { contReview } from "@/content/data";
 import ReviewCard from "../ui/6-ReviewCard";
-import { reviews } from "@/content/data/constants";
+import { reviews } from "@/content/data";
 
 const Reviews = () => {
   return (

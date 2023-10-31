@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { navLinksStatic } from "@/content/data/constants";
+import { navLinksStatic } from "@/content/data";
 
 export default function HeaderStaticNav() {
   return (

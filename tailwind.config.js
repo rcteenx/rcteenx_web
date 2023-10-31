@@ -13,6 +13,7 @@ module.exports = {
       xl: "1280px",
       "2xl": "1536px",
     },
+
     extend: {
       fontFamily: {
         palanquin: ["Palanquin", "sans-serif"],
@@ -37,5 +38,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography"),  require("tailwind-scrollbar")],
 };

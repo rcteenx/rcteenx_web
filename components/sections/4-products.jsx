@@ -1,4 +1,4 @@
-import { contProd, products } from "@/content/data/constants";
+import { contProd, products } from "@/content/data";
 import ProductCard from "../ui/4-ProductCard";
 
 const Products = () => {

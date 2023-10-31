@@ -1,4 +1,4 @@
-import { footerLinks } from "@/content/data/constants";
+import { footerLinks } from "@/content/data";
 
 const FooterLinks = () => {
   return (

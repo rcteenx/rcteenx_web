@@ -1,4 +1,4 @@
-import { contOffer } from "@/content/data/constants";
+import { contOffer } from "@/content/data";
 import { info, arrowRight } from "@/public/assets/icons";
 import { offer } from "@/public/assets/images";
 
