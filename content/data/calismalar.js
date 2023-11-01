@@ -86,7 +86,7 @@ export const tutorials = [
         label: "Pricing cards",
       },
       {
-        id: 5,
+        id: 6,
         folder: "product-modal",
         image: productModal,
         label: "Product modal",

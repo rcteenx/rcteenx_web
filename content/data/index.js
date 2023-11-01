@@ -24,9 +24,10 @@ export const navLinksHome = [
 ];
 
 export const navLinksStatic = [
-  { href: "calismalar", label: "Çalışmalar" },
-  { href: "hakkimda", label: "Hakkımda" },
-  { href: "iletisim", label: "İletişim" },
+  { href: "#rcteenx", label: "rcteenx" },
+  { href: "cv", label: "CV" },
+  { href: "references", label: "References" },
+  { href: "freelance", label: "Freelance" },
 ];
 
 export const contHero = {
@@ -165,10 +166,10 @@ export const footerLinks = [
     ],
   },
   {
-    title: "Bize Ulaşın",
+    title: "Contact",
     links: [
       { name: "rcteenx@gmail.com", link: "mailto:rcteenx@gmail.com" },
-      { name: "0 (544) 308 74 02", link: "tel:05443087402" },
+      { name: "+90 (544) 308 74 02", link: "tel:+905443087402" },
     ],
   },
 ];

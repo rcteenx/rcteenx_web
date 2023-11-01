@@ -4,7 +4,7 @@ const FooterCopyRight = () => {
   return (
     <div className="mt-8 px-2 py-4 flex justify-between text-white-400 border-t">
       <p className="font-montserrat text-xs">
-        &copy; {new Date().getFullYear()} - Tüm hakları saklıdır.
+        &copy; {new Date().getFullYear()} - All rights reserved.
       </p>
       <p className="font-montserrat text-xs">
         <span className=" text-red-700">♥</span>&nbsp; by &nbsp;

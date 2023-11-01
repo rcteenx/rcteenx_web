@@ -1,6 +1,7 @@
 import smd from "@/content/data/siteMetaData";
 
-import Header from "@/components/ui/header/home";
+// import Header from "@/components/ui/header/home";
+import Header from "@/components/ui/header/static";
 import Footer from "@/components/ui/footer";
 
 import Hero from "@/components/sections/1-hero";

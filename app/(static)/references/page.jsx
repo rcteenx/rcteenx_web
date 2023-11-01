@@ -3,22 +3,22 @@ import { tutorials } from "@/content/data/calismalar";
 
 import { bookmark } from "@/public/assets/images";
 
-import HeaderStaticIndex from "@/components/ui/header/static";
+import Header from "@/components/ui/header/static";
 import Footer from "@/components/ui/footer";
 import WorkCard from "@/components/ui/WorkCard";
 
 export async function generateMetadata() {
-  const sPage = await getStaticFile("calismalar");
+  const sPage = await getStaticFile("references");
   return {
     title: sPage.title,
   };
 }
 
 export default async function Page() {
-  const sPage = await getStaticFile("calismalar");
+  const sPage = await getStaticFile("references");
   return (
     <>
-      <HeaderStaticIndex />
+      <Header />
       <main className="container mx-auto container-p mt-20 lg:my-32">
         <section>
           <h4>{sPage.description}</h4>
@@ -41,6 +41,7 @@ export default async function Page() {
                 <div key={t.id} className="flex gap-4 flex-wrap justify-center">
                   {t.works.map((w) => (
                     <WorkCard
+                      key={w.id}
                       id={w.id}
                       imgURL={w.image.src}
                       label={w.label}

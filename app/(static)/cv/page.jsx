@@ -1,19 +1,19 @@
 import { getStaticFile } from "@/lib/static";
-import HeaderStaticIndex from "@/components/ui/header/static";
+import Header from "@/components/ui/header/static";
 import Footer from "@/components/ui/footer";
 
 export async function generateMetadata() {
-  const sPage = await getStaticFile("hakkimda");
+  const sPage = await getStaticFile("cv");
   return {
     title: sPage.title,
   };
 }
 
 export default async function Page() {
-  const sPage = await getStaticFile("hakkimda");
+  const sPage = await getStaticFile("cv");
   return (
     <>
-      <HeaderStaticIndex />
+      <Header />
       <main className="container mx-auto container-p mt-20 lg:my-32">
         <section>
           <h4>{sPage.description}</h4>

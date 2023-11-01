@@ -1,5 +1,5 @@
 const WorkCard = ({ id, imgURL, label, href }) => {
-  const w_hero = id % 3 === 2 ? " xl:w-[28rem]" : " ";
+  const w_hero = id % 3 === 2 ? " 2xl:w-[36rem] xl:w-[28rem]" : " ";
   const w_class =
     `overflow-y-auto scrollbar-none md:w-[20rem] h-[12rem]` + w_hero;
   return (
