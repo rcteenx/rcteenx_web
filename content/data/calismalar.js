@@ -53,7 +53,7 @@ export const tutorials = [
         label: "Testimonial",
       },
       {
-        id: 8,
+        id: 9,
         folder: "webees-tech",
         image: webees_tech,
         label: "Webees Tech",
