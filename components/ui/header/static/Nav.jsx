@@ -6,7 +6,7 @@ export default function HeaderStaticNav() {
   return (
     <div>
       {/* Large Screen */}
-      <nav className="fixed py-2 px-4 border border-solid border-dark rounded-full font-thin text-xs md:text-base bg-white bg-opacity-40  top-2 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-10">
+      <nav className="fixed py-2 px-6 border border-solid border-dark rounded-full font-thin text-xs md:text-base bg-white bg-opacity-40  top-2 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-10">
         <ul className="flex justify-center items-center space-x-4">
           {navLinksStatic.map((n) => (
             <li

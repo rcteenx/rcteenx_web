@@ -25,12 +25,49 @@ export const navLinksHome = [
 
 export const navLinksStatic = [
   { href: "#rcteenx", label: "rcteenx" },
-  { href: "cv/index.html", label: "CV" },
-  { href: "references", label: "References" },
+  // { href: "cv/index.html", label: "CV" },
+  // { href: "cv", label: "CV" },
+  { href: "bio", label: "Bio" },
+  { href: "portfolio", label: "Portfolio" },
   { href: "freelance", label: "Freelance" },
 ];
 
 export const contHero = {
+  coral1: "Front-End Web Developer",
+  coral2: "& E-commerce Consultant",
+  fline: "IT Skills Soft Skills",
+  span: "Hedefinize",
+  desc: "Hedefler doğrultusunda bilinçli olarak yapılandırılmamış web sayfaları, dijital dünyada fırsat kayıplarına neden oluyor",
+  btn1: "Bize Ulaşın",
+  btn2: "Bilgi Al",
+  quote:
+    "Ziyaretçilerinizin yüzde kaçı sizinle temas kuruyor ve müşteriniz oluyor?",
+};
+
+export const contBioHero = {
+  coral1: "Front-End Web Developer",
+  coral2: "& E-commerce Consultant",
+  fline: "IT Skills Soft Skills",
+  span: "Skill Set",
+  desc: "Hedefler doğrultusunda bilinçli olarak yapılandırılmamış web sayfaları, dijital dünyada fırsat kayıplarına neden oluyor",
+  btn1: "Bize Ulaşın",
+  btn2: "Bilgi Al",
+  quote: "This is a front-end web developer from Turkey.",
+};
+
+export const statistics = [
+  { id: 1, value: "250 k+", label: "Ziyaretçi" },
+  { id: 2, value: "10 k+", label: "Teklif" },
+  { id: 3, value: "1 k+", label: "Müşteri" },
+];
+
+export const statisticsFreelance = [
+  { id: 1, value: "250 k+", label: "Ziyaretçi" },
+  { id: 2, value: "10 k+", label: "Teklif" },
+  { id: 3, value: "1 k+", label: "Müşteri" },
+];
+
+export const contFreelanceHero = {
   coral1: "Front-End Web Developer",
   coral2: "& E-commerce Consultant",
   fline: "Dijital Varlıklarınız",
@@ -39,13 +76,9 @@ export const contHero = {
   desc: "Hedefler doğrultusunda bilinçli olarak yapılandırılmamış web sayfaları, dijital dünyada fırsat kayıplarına neden oluyor",
   btn1: "Bize Ulaşın",
   btn2: "Bilgi Al",
+  quote:
+    "Ziyaretçilerinizin yüzde kaçı sizinle temas kuruyor ve müşteriniz oluyor?",
 };
-
-export const statistics = [
-  { id: 1, value: "250 k+", label: "Ziyaretçi" },
-  { id: 2, value: "10 k+", label: "Teklif" },
-  { id: 3, value: "1 k+", label: "Müşteri" },
-];
 
 export const services = [
   {
@@ -178,4 +211,19 @@ export const socialMedia = [
   { src: facebook, alt: "facebook logo" },
   { src: twitter, alt: "twitter logo" },
   { src: instagram, alt: "instagram logo" },
+];
+
+export const skillBar = [
+  { id: 1, label: "Javascript - React & Next", percent: "85" },
+  { id: 1, label: "Tailwind CSS || Bootstrap 5", percent: "90" },
+  { id: 1, label: "HTML & CSS", percent: "95" },
+  { id: 1, label: "Semantic Web & SEO", percent: "90" },
+  { id: 1, label: "UI & UX Design", percent: "80" },
+  { id: 1, label: "Business Logic", percent: "95" },
+  { id: 1, label: "Algorithmic & Critical Thinking", percent: "90" },
+  { id: 1, label: "Problem Solving & Communication", percent: "85" },
+  { id: 1, label: "Time Management & Teamwork", percent: "80" },
+  { id: 1, label: "Turkish", percent: "100" },
+  { id: 1, label: "English", percent: "90" },
+  { id: 1, label: "German", percent: "45" },
 ];

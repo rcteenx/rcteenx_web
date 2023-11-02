@@ -4,7 +4,7 @@ import smd from "@/content/data/siteMetaData";
 import Header from "@/components/ui/header/static";
 import Footer from "@/components/ui/footer";
 
-import Hero from "@/components/sections/1-hero";
+import FreelanceHero from "@/components/sections/1-freelance-hero";
 import Products from "@/components/sections/4-products";
 import SuperQuality from "@/components/sections/3-about-us";
 import Services from "@/components/sections/2-services";
@@ -25,7 +25,7 @@ export default async function HomePage() {
       <main>
         {/* <h1>{sPage.title}</h1>
       <h4>{sPage.description}</h4> */}
-        <Hero />
+        <FreelanceHero />
         <Services />
         {/* <SuperQuality /> */}
         <Products />

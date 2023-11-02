@@ -1,8 +1,8 @@
-import { contHero, statistics } from "@/content/data";
+import { contFreelanceHero, statisticsFreelance } from "@/content/data";
 import { info, arrowRight } from "@/public/assets/icons";
 import { rcHero } from "@/public/assets/images";
 
-const Hero = () => {
+const FreelanceHero = () => {
   return (
     <section
       id="hero"
@@ -10,27 +10,27 @@ const Hero = () => {
     >
       <div className="xl:w-1/2">
         <p className="mb-8 text-xs md:text-lg font-montserrat text-coral-red">
-          {contHero.coral1}
+          {contFreelanceHero.coral1}
           <br />
-          {contHero.coral2}
+          {contFreelanceHero.coral2}
         </p>
         <h1 className="font-palanquin text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold">
           <span className="xl:bg-white xl:whitespace-nowrap relative z-50 pr-12">
-            {contHero.fline}
+            {contFreelanceHero.fline}
           </span>
           <br />
           <span className="text-coral-red inline-block xl:my-4">
-            {contHero.span}
+            {contFreelanceHero.span}
           </span>
           <br />
-          {contHero.sline}
+          {contFreelanceHero.sline}
         </h1>
         <p className="my-8 text-xs md:text-lg font-montserrat text-slate-gray leading-4 ">
-          {contHero.desc}. <sup>*</sup>
+          {contFreelanceHero.desc}. <sup>*</sup>
         </p>
         <div className="flex flex-row space-x-4">
           <a href="#" className="btn-hero bg-coral-red text-white">
-            {contHero.btn1}
+            {contFreelanceHero.btn1}
             <img
               src={arrowRight.src}
               alt="arrow right icon"
@@ -38,7 +38,7 @@ const Hero = () => {
             />
           </a>
           <a href="#" className="btn-hero bg-white text-black">
-            {contHero.btn2}
+            {contFreelanceHero.btn2}
             <img
               src={info.src}
               alt="info icon"
@@ -46,8 +46,9 @@ const Hero = () => {
             />
           </a>
         </div>
+
         <div className="flex justify-start items-start flex-wrap w-full my-12 gap-8 md:gap-16">
-          {statistics.map((stat) => (
+          {statisticsFreelance.map((stat) => (
             <div key={stat.id}>
               <p className="text-2xl sm:text-4xl font-palanquin font-bold">
                 {stat.value}
@@ -68,11 +69,11 @@ const Hero = () => {
           className="px-4 md:border border-b-0 bg-white/10 border-black/20"
         />
         <p className="px-4 md:px-8 m-0 py-2 mb-10 text-center bg-white/20 w-full border-black border-y">
-          {contHero.quote}
+          {contFreelanceHero.quote}
         </p>
       </div>
     </section>
   );
 };
 
-export default Hero;
+export default FreelanceHero;
