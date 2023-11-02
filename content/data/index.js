@@ -25,7 +25,7 @@ export const navLinksHome = [
 
 export const navLinksStatic = [
   { href: "#rcteenx", label: "rcteenx" },
-  { href: "cv", label: "CV" },
+  { href: "cv/index.html", label: "CV" },
   { href: "references", label: "References" },
   { href: "freelance", label: "Freelance" },
 ];
