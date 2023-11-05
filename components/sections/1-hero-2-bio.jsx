@@ -2,32 +2,32 @@ import { skillBar, contBioHero, statistics } from "@/content/data";
 import { rcHero } from "@/public/assets/images";
 import SkillBar from "../ui/SkillBar";
 
-const About = () => {
+const BioHero = () => {
   return (
     <section
       id="hero"
-      className="container mx-auto container-p mt-12 md:mt-20 lg:mt-32 flex flex-col xl:flex-row justify-center gap-0"
+      className="container mx-auto container-p my-12 md:my-20 lg:mt-32 flex flex-col lg:flex-row justify-center gap-0 max-w-6xl"
     >
-      <div className="xl:w-1/2 xl:pr-2 text-center xl:text-left">
+      <div className="lg:w-1/2 lg:pr-2 text-center lg:text-left">
         <p className="mb-8 text-xs text-left md:text-lg font-montserrat text-coral-red">
           {contBioHero.coral1}
           <br />
           {contBioHero.coral2}
         </p>
-        <h1 className="font-palanquin text-center md:text-left text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold my-4">
+        <h1 className="font-palanquin text-center md:text-left text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold lg:my-10">
           <span className="lg:bg-white lg:whitespace-nowrap relative z-50 lg:pr-12 lg:rounded-lg">
             {contBioHero.fline}
           </span>
-          <br />
+          {/* <br />
           <span className="text-coral-red inline-block lg:my-4">
             {contBioHero.span}
           </span>
           <br />
-          {contBioHero.sline}
+          {contBioHero.sline} */}
         </h1>
         <div className="box-shadow w-100 lg:max-w-sm bg-white text-grey-700 rounded-2xl mx-auto lg:mx-2">
           <div className="flex flex-col gap-2 p-4">
-            <h2 className="mx-3 mt-1 mb-0 text-coral-red">Skill Set</h2>
+            <h2 className="mx-3 my-4 mb-0 text-4xl text-coral-red">TOOL BOX</h2>
             {skillBar.map((sb) => (
               <SkillBar key={sb.id} label={sb.label} percent={sb.percent} />
             ))}
@@ -51,4 +51,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default BioHero;

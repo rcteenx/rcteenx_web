@@ -6,6 +6,9 @@ import facebook from "./facebook.svg";
 import hamburger from "./hamburger.svg";
 import info from "./info.svg";
 import instagram from "./instagram.svg";
+import linkedin from "./linkedin.svg";
+import github from "./github.svg";
+
 import support from "./support.svg";
 import shieldTick from "./shield-tick.svg";
 import star from "./star.svg";
@@ -23,6 +26,8 @@ export {
   hamburger,
   info,
   instagram,
+  linkedin,
+  github,
   support,
   shieldTick,
   star,

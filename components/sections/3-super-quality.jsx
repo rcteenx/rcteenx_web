@@ -5,7 +5,7 @@ import { about } from "@/public/assets/images";
 const SuperQuality = () => {
   return (
     <section
-      id="about"
+      id="super-quality"
       className="container mx-auto container-p pt-16 md:pt-24 flex flex-col lg:flex-row justify-between items-center gap-10"
     >
       <div className="lg:w-1/2 flex flex-col">

@@ -28,7 +28,7 @@ export default async function Page() {
             PORTFOLIO '23
           </h1>
           <p className="max-w-xl text-center mx-auto text-gray-400 font-thin">
-            Farklı "framework"ler ile hazırlanmış web sayfa ve bölüm örnekleri
+            Web pages and parts developed based via best frameworks
           </p>
           {/* <h1 className="text-coral-red text-6xl">{sPage.title}</h1> */}
           <div>

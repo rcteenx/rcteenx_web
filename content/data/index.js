@@ -1,6 +1,8 @@
 import {
   facebook,
+  github,
   instagram,
+  linkedin,
   reviews,
   shieldTick,
   support,
@@ -88,66 +90,6 @@ export const contFreelanceHero = {
     "Markanıza uygun stratejik hedeflerinizi belirleyin, dijital dünyada hedeflerinize ulaşmak için çalışmaları birlikte planlayalım.",
 };
 
-export const digitalPresenceAreas = [
-  {
-    imgURL: webpage,
-    label: "Web Sitesi",
-    subtext:
-      "Web siteni aylık ortalama kaç kişi ziyaret ediyor, hangi kanallardan geliyor?",
-  },
-  {
-    imgURL: support,
-    label: "Bloglar",
-    subtext:
-      "Dijital kaynaklardan size ulaşan kaç kişi, para kazandıran müşteriye dönüşüyor?",
-  },
-  {
-    imgURL: support,
-    label: "Landing Pages",
-    subtext:
-      "Belirli amaçlarla oluşturulmuş açılış sayfaları, stratejik dijital duruşunuzla uyumlu olmalı.",
-  },
-  {
-    imgURL: support,
-    label: "Dijital Reklamlar",
-    subtext:
-      "Dijital kaynaklardan size ulaşan kaç kişi, para kazandıran müşteriye dönüşüyor?",
-  },
-  {
-    imgURL: shieldTick,
-    label: "Sosyal Medya",
-    subtext:
-      "Ziyaretçilerin sitenizde kalış süresi ve ortalama sayfa dolaşma sayısı?",
-  },
-  {
-    imgURL: reviews,
-    label: "Müşteri Yorumları",
-    subtext:
-      "Dijital kaynaklardan size ulaşan kaç kişi, para kazandıran müşteriye dönüşüyor?",
-  },
-];
-
-export const services = [
-  {
-    imgURL: truckFast,
-    label: "1- Ziyaretçi",
-    subtext:
-      "Web siteni aylık ortalama kaç kişi ziyaret ediyor, hangi kanallardan geliyor?",
-  },
-  {
-    imgURL: shieldTick,
-    label: "2- Etkileşim",
-    subtext:
-      "Ziyaretçilerin sitenizde kalış süresi ve ortalama sayfa dolaşma sayısı?",
-  },
-  {
-    imgURL: support,
-    label: "3- Müşteri",
-    subtext:
-      "Dijital kaynaklardan size ulaşan kaç kişi, para kazandıran müşteriye dönüşüyor?",
-  },
-];
-
 export const contAbout = {
   preSpan: "İşinizin Gereği",
   span1: "Destek",
@@ -171,33 +113,37 @@ export const products = [
     imgURL: web1,
     rating: 4.3,
     name: "Tek Sayfa",
-    price: "$250",
+    price: "$500",
+    priceCampaign: "$250",
   },
   {
     imgURL: web2,
     rating: 4.5,
     name: "Mini Site",
-    price: "$350",
+    price: "$700",
+    priceCampaign: "$350",
   },
   {
     imgURL: web3,
     rating: 4.8,
     name: "Blog",
-    price: "$500",
+    price: "$1,000",
+    priceCampaign: "$500",
   },
   {
     imgURL: web4,
     rating: 4.9,
     name: "Kurumsal",
-    price: "$1,000",
+    price: "$2,000",
+    priceCampaign: "$1,000",
   },
 ];
 
 export const contOffer = {
-  span: "Özel",
-  postSpan: "Teklif",
-  desc1: "Sınırlı bir süre geçerli, çok özel teklifimiz aşağıdadır.",
-  desc2: "2023 yılı sonuna kadar, vereceğiniz siparişlerde 30% indirim.",
+  span: "%50",
+  postSpan: "İndirim",
+  desc1: "2023 yılının sonuna kadar geçerli, özel teklifimiz:",
+  desc2: "Vereceğiniz siparişlerde 50% indirim.",
   btn1: "Teklif iste",
   btn2: "Bilgi al",
 };
@@ -225,24 +171,24 @@ export const reviewsX = [
   },
 ];
 export const footerLinks = [
+  // {
+  //   title: "Ürünler",
+  //   links: [
+  //     { name: "Hazır Site", link: "/" },
+  //     { name: "Hazır Site 2", link: "/" },
+  //     { name: "Hazır Site 3 ", link: "/" },
+  //     { name: "Hazır Site 4", link: "/" },
+  //     { name: "Hazır Site 5", link: "/" },
+  //   ],
+  // },
   {
-    title: "Ürünler",
+    title: "Referans Sayfalar...",
     links: [
-      { name: "Hazır Site", link: "/" },
-      { name: "Hazır Site 2", link: "/" },
-      { name: "Hazır Site 3 ", link: "/" },
-      { name: "Hazır Site 4", link: "/" },
-      { name: "Hazır Site 5", link: "/" },
-    ],
-  },
-  {
-    title: "Temel Bilgiler",
-    links: [
-      { name: "Hakkımızda", link: "/" },
-      { name: "Sık Sorulan Sorular", link: "/" },
-      { name: "Tasarım Süreci", link: "/" },
-      { name: "100% Garanti", link: "/" },
-      { name: "Ödeme", link: "/" },
+      // { name: "CV", link: "/cv" },
+      // { name: "Sık Sorulan Sorular", link: "/" },
+      // { name: "Tasarım Süreci", link: "/" },
+      // { name: "100% Garanti", link: "/" },
+      // { name: "Ödeme", link: "/" },
     ],
   },
   {
@@ -255,9 +201,14 @@ export const footerLinks = [
 ];
 
 export const socialMedia = [
-  { src: facebook, alt: "facebook logo" },
-  { src: twitter, alt: "twitter logo" },
-  { src: instagram, alt: "instagram logo" },
+  // { src: instagram, alt: "instagram logo" },
+  { src: github, alt: "github logo", link: "https://github.com/rcteenx" },
+  {
+    src: linkedin,
+    alt: "linkedin logo",
+    link: "https://www.linkedin.com/in/rcteenx",
+  },
+  { src: twitter, alt: "twitter logo", link: "https://twitter.com/rcteenx" },
 ];
 
 export const skillBar = [

@@ -3,6 +3,7 @@ import siteLogo from "./rcteenx.jpeg";
 import footerLogo from "./rcteenx.jpeg";
 import ziyaretci from "./ziyaretci.png";
 import about from "./about.png";
+import discount from "./discount.png";
 
 import customer1 from "./customer1.jpeg";
 import customer2 from "./customer2.svg";
@@ -20,6 +21,7 @@ export {
   footerLogo,
   ziyaretci,
   about,
+  discount,
   customer1,
   customer2,
   offer,

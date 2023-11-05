@@ -1,7 +1,9 @@
 import { getStaticFile } from "@/lib/static";
 import Header from "@/components/ui/header/static";
 import Footer from "@/components/ui/footer";
-import About from "@/components/sections/1-bio-hero";
+import BioHero from "@/components/sections/1-hero-2-bio";
+import WhiteBoxArea from "@/components/sections/white-box-exp";
+import Education from "@/components/sections/3-education";
 
 export async function generateMetadata() {
   const sPage = await getStaticFile("bio");
@@ -16,7 +18,9 @@ export default async function Page() {
     <>
       <Header id="2" />
       <main>
-        <About />
+        <BioHero />
+        <WhiteBoxArea />
+        <Education />
         {/* <section>
           <h4>{sPage.description}</h4>
           <h1 className="">{sPage.title}</h1>
