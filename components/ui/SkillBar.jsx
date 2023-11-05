@@ -1,10 +1,11 @@
 const SkillBar = ({ label, percent }) => {
   const classRRound = percent == 100 ? "rounded-r-2xl" : "";
 
-  const classColor = () => {
+  const classSetting = () => {
     switch (percent) {
       case "100":
-        return "bg-green-900";
+        // return "w-[" + percent + "%] bg-green-900";
+        return "bg-green-900 rounded-r-2xl";
       case "95":
         return "bg-green-800";
       case "90":
@@ -33,6 +34,8 @@ const SkillBar = ({ label, percent }) => {
         return "bg-red-600";
       case "30":
         return "bg-red-500";
+      case "15":
+        return "bg-red-500";
 
       default:
         return "";
@@ -42,7 +45,7 @@ const SkillBar = ({ label, percent }) => {
   return (
     <div className="skillBarContainer">
       <div
-        class={`skillBar w-[80%] bg-green-500 ${classRRound} ${classColor()}`}
+        className={`skillBar ${classSetting()}`}
         style={{ width: percent + "%" }}
       >
         {label}

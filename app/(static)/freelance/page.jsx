@@ -21,7 +21,7 @@ export async function generateMetadata() {
 export default async function HomePage() {
   return (
     <>
-      <Header />
+      <Header id="4" />
       <main>
         {/* <h1>{sPage.title}</h1>
       <h4>{sPage.description}</h4> */}
@@ -29,7 +29,7 @@ export default async function HomePage() {
         <Services />
         {/* <SuperQuality /> */}
         <Products />
-        {/* <Offer /> */}
+        <Offer />
         {/* <Reviews />
       <Subscribe /> */}
       </main>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { navLinksStatic } from "@/content/data";
 
-export default function HeaderStaticNav() {
+export default function HeaderStaticNav({ id }) {
   return (
     <div>
       {/* Large Screen */}
@@ -10,8 +10,10 @@ export default function HeaderStaticNav() {
         <ul className="flex justify-center items-center space-x-4">
           {navLinksStatic.map((n) => (
             <li
-              key={n.href}
-              className="first:text-coral-red border-b border-b-white hover:border-b-coral-red"
+              key={n.id}
+              className={`border-b border-b-white hover:border-b-coral-red ${
+                id === n.id ? "text-coral-red" : "2"
+              } `}
             >
               <Link href={`/${n.href + process.env.file_ext}`}>{n.label}</Link>
             </li>

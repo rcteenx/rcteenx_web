@@ -18,10 +18,10 @@ export default async function Page() {
   const sPage = await getStaticFile("portfolio");
   return (
     <>
-      <Header />
-      <main className="container mx-auto container-p mt-20 lg:my-32">
-        <section>
-          <p className="mb-8 text-xs md:text-lg font-montserrat text-coral-red">
+      <Header id="3" />
+      <main>
+        <section className="container mx-auto container-p mt-12 md:mt-20 lg:my-32 ">
+          <p className="mb-8 text-xs text-left md:text-lg font-montserrat text-coral-red">
             {sPage.description}
           </p>
           <h1 className="text-coral-red text-4xl md:text-6xl font-bold max-w-xl text-center mx-auto tracking-wide">

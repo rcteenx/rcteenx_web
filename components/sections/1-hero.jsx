@@ -6,30 +6,28 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="container mx-auto container-p mt-20 lg:my-32 flex flex-col xl:flex-row justify-center gap-0"
+      className="container mx-auto container-p my-12 md:my-20 lg:mt-32 flex flex-col xl:flex-row justify-center gap-0"
     >
-      <div className="xl:w-1/2">
-        <p className="mb-8 text-xs md:text-lg font-montserrat text-coral-red">
+      <div className="xl:w-1/2 xl:pr-2 text-center xl:text-left">
+        <p className="mb-8 text-xs text-left md:text-lg font-montserrat text-coral-red">
           {contHero.coral1}
           <br />
           {contHero.coral2}
         </p>
-        <h1 className="font-palanquin text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold">
-          <span className="xl:bg-white xl:whitespace-nowrap relative z-50 pr-12">
+        <h1 className="font-palanquin text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold ">
+          <span className="xl:bg-white xl:whitespace-nowrap relative z-50 xl:pr-12">
             {contHero.fline}
           </span>
           <br />
           <span className="text-coral-red inline-block xl:my-4">
             {contHero.span}
           </span>
-          <br />
-          {contHero.sline}
         </h1>
-        <p className="my-8 text-xs md:text-lg font-montserrat text-slate-gray leading-4 ">
-          {contHero.desc}. <sup>*</sup>
+        <p className="text-xs md:text-lg font-montserrat text-slate-gray leading-4 ">
+          {contHero.desc}
         </p>
-        <div className="flex flex-row space-x-4">
-          <a href="#" className="btn-hero bg-coral-red text-white">
+        <div className="flex my-8 flex-row space-x-4 justify-center xl:justify-start">
+          <a href="#footer" className="btn-hero bg-coral-red text-white">
             {contHero.btn1}
             <img
               src={arrowRight.src}
@@ -46,7 +44,10 @@ const Hero = () => {
             />
           </a>
         </div>
-        <div className="flex justify-start items-start flex-wrap w-full my-12 gap-8 md:gap-16">
+        <p className="text-xs mb-8 font-montserrat text-slate-gray leading-4 ">
+          <sup>*</sup> {contHero.info}
+        </p>
+        {/* <div className="flex justify-start items-start flex-wrap w-full my-12 gap-8 md:gap-16">
           {statistics.map((stat) => (
             <div key={stat.id}>
               <p className="text-2xl sm:text-4xl font-palanquin font-bold">
@@ -55,9 +56,8 @@ const Hero = () => {
               <p className="font-montserrat text-slate-gray">{stat.label}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
-
       {/* hidden xl:flex  bg-hero */}
       <div className="xl:w-1/2 flex flex-col justify-end items-center border bg-[url('/assets/images/ziyaretci.png')] bg-cover relative rounded-2xl">
         <img

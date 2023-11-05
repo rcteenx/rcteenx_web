@@ -1,10 +1,12 @@
 import {
   facebook,
   instagram,
+  reviews,
   shieldTick,
   support,
   truckFast,
   twitter,
+  webpage,
 } from "@/public/assets/icons";
 import {
   customer1,
@@ -24,22 +26,23 @@ export const navLinksHome = [
 ];
 
 export const navLinksStatic = [
-  { href: "#rcteenx", label: "rcteenx" },
+  { id: "1", href: "#rcteenx", label: "rcteenx" },
   // { href: "cv/index.html", label: "CV" },
   // { href: "cv", label: "CV" },
-  { href: "bio", label: "Bio" },
-  { href: "portfolio", label: "Portfolio" },
-  { href: "freelance", label: "Freelance" },
+  { id: "2", href: "bio", label: "Bio" },
+  { id: "3", href: "portfolio", label: "Portfolio" },
+  { id: "4", href: "freelance", label: "Freelance" },
 ];
 
 export const contHero = {
   coral1: "Front-End Web Developer",
   coral2: "& E-commerce Consultant",
-  fline: "IT Skills Soft Skills",
-  span: "Hedefinize",
-  desc: "Hedefler doğrultusunda bilinçli olarak yapılandırılmamış web sayfaları, dijital dünyada fırsat kayıplarına neden oluyor",
-  btn1: "Bize Ulaşın",
-  btn2: "Bilgi Al",
+  fline: "Dijital Varlığınız* Nedir?",
+  span: "ve Nasıl Geliştirilir",
+  desc: "Stratejik hedefler doğrultusunda, bilinçli olarak yapılandırılmamış dijital kaynaklar, telafisi zor olan fırsat kayıplarına neden oluyor.",
+  btn1: "İletişim",
+  btn2: "Bilgi",
+  info: 'Web sayfalarınız, arama motoru, sosyal medya ve diğer platformlar aracılığıyla online ortamda yaratlan izlenimlerin bütünlüğü "dijtial varlık"ımızı oluşturur.',
   quote:
     "Ziyaretçilerinizin yüzde kaçı sizinle temas kuruyor ve müşteriniz oluyor?",
 };
@@ -47,12 +50,14 @@ export const contHero = {
 export const contBioHero = {
   coral1: "Front-End Web Developer",
   coral2: "& E-commerce Consultant",
-  fline: "IT Skills Soft Skills",
-  span: "Skill Set",
+  fline: "Front-End Developer",
+  span: "TOOL BOX",
   desc: "Hedefler doğrultusunda bilinçli olarak yapılandırılmamış web sayfaları, dijital dünyada fırsat kayıplarına neden oluyor",
   btn1: "Bize Ulaşın",
   btn2: "Bilgi Al",
-  quote: "This is a front-end web developer from Turkey.",
+  quoteTitle: "<h1>Hello World!</h1>",
+  quote:
+    "This is a front-end web developer from Turkey. Thanks to modern frameworks such as Next JS and Tailwind CSS, it is fun & fast to build & maintain web applications. Let's build something together.",
 };
 
 export const statistics = [
@@ -70,15 +75,57 @@ export const statisticsFreelance = [
 export const contFreelanceHero = {
   coral1: "Front-End Web Developer",
   coral2: "& E-commerce Consultant",
-  fline: "Dijital Varlıklarınız",
-  span: "Hedefinize",
+  fline: "Dijital Varlığınızı",
+  span: "Birlikte Geliştirelim",
   sline: "Uygun mu?",
-  desc: "Hedefler doğrultusunda bilinçli olarak yapılandırılmamış web sayfaları, dijital dünyada fırsat kayıplarına neden oluyor",
-  btn1: "Bize Ulaşın",
+  quoteEn1: "A lot of times, people don't know what they want",
+  quoteEn2: "until you show it to them. *",
+  from: "Steve Jobs",
+  btn1: "İletişim",
   btn2: "Bilgi Al",
+  info: "Çoğu zaman insanlar ne istediklerini bilmiyor, siz onlara gösterene kadar.",
   quote:
-    "Ziyaretçilerinizin yüzde kaçı sizinle temas kuruyor ve müşteriniz oluyor?",
+    "Markanıza uygun stratejik hedeflerinizi belirleyin, dijital dünyada hedeflerinize ulaşmak için çalışmaları birlikte planlayalım.",
 };
+
+export const digitalPresenceAreas = [
+  {
+    imgURL: webpage,
+    label: "Web Sitesi",
+    subtext:
+      "Web siteni aylık ortalama kaç kişi ziyaret ediyor, hangi kanallardan geliyor?",
+  },
+  {
+    imgURL: support,
+    label: "Bloglar",
+    subtext:
+      "Dijital kaynaklardan size ulaşan kaç kişi, para kazandıran müşteriye dönüşüyor?",
+  },
+  {
+    imgURL: support,
+    label: "Landing Pages",
+    subtext:
+      "Belirli amaçlarla oluşturulmuş açılış sayfaları, stratejik dijital duruşunuzla uyumlu olmalı.",
+  },
+  {
+    imgURL: support,
+    label: "Dijital Reklamlar",
+    subtext:
+      "Dijital kaynaklardan size ulaşan kaç kişi, para kazandıran müşteriye dönüşüyor?",
+  },
+  {
+    imgURL: shieldTick,
+    label: "Sosyal Medya",
+    subtext:
+      "Ziyaretçilerin sitenizde kalış süresi ve ortalama sayfa dolaşma sayısı?",
+  },
+  {
+    imgURL: reviews,
+    label: "Müşteri Yorumları",
+    subtext:
+      "Dijital kaynaklardan size ulaşan kaç kişi, para kazandıran müşteriye dönüşüyor?",
+  },
+];
 
 export const services = [
   {
@@ -161,7 +208,7 @@ export const contReview = {
   desc1:
     "Müşterilerimizin ürün ve hizmetlerimiz hakkındaki yorumları, birlitke yapacağımız çalışmalara yol gösterebilir",
 };
-export const reviews = [
+export const reviewsX = [
   {
     imgURL: customer1,
     customerName: "Morich Brown",
@@ -215,7 +262,7 @@ export const socialMedia = [
 
 export const skillBar = [
   { id: 1, label: "Javascript - React & Next", percent: "85" },
-  { id: 1, label: "Tailwind CSS || Bootstrap 5", percent: "90" },
+  { id: 1, label: "Tailwind CSS", percent: "90" },
   { id: 1, label: "HTML & CSS", percent: "95" },
   { id: 1, label: "Semantic Web & SEO", percent: "90" },
   { id: 1, label: "UI & UX Design", percent: "80" },
@@ -225,5 +272,5 @@ export const skillBar = [
   { id: 1, label: "Time Management & Teamwork", percent: "80" },
   { id: 1, label: "Turkish", percent: "100" },
   { id: 1, label: "English", percent: "90" },
-  { id: 1, label: "German", percent: "45" },
+  // { id: 1, label: "German", percent: "45" },
 ];

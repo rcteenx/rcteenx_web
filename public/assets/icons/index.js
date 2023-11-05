@@ -11,6 +11,8 @@ import shieldTick from "./shield-tick.svg";
 import star from "./star.svg";
 import truckFast from "./truck-fast.svg";
 import twitter from "./twitter.svg";
+import webpage from "./webpage.svg";
+import reviews from "./reviews.svg";
 
 export {
   arrowRight,
@@ -26,4 +28,6 @@ export {
   star,
   truckFast,
   twitter,
+  webpage,
+  reviews,
 };
