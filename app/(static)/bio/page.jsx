@@ -4,6 +4,7 @@ import Footer from "@/components/ui/footer";
 import BioHero from "@/components/sections/1-hero-2-bio";
 import WhiteBoxArea from "@/components/sections/white-box-exp";
 import Education from "@/components/sections/3-education";
+import AboutMe from "@/components/sections/2-frameworks";
 
 export async function generateMetadata() {
   const sPage = await getStaticFile("bio");
@@ -19,8 +20,9 @@ export default async function Page() {
       <Header id="2" />
       <main>
         <BioHero />
-        <WhiteBoxArea />
+        <AboutMe />
         <Education />
+        <WhiteBoxArea />
         {/* <section>
           <h4>{sPage.description}</h4>
           <h1 className="">{sPage.title}</h1>

@@ -25,3 +25,8 @@ Sitemap oluşturma sistemine bakalım - gerekirse geliştirme yaparız.
 - Tasarım örneklerine (showcase) link verme...
 
 ## TodoBASE
+
+### Optimizasyon
+
+- Svg'leri gömelim
+- Image boyutlarını sınırlandıralım (Photoshop)

@@ -25,25 +25,25 @@ const Education = () => {
               className="w-16 h-16 block mx-auto"
             />
             <h3>Boğaziçi Üniversitesi</h3>
-            <p>İşletme | İİBF</p>
-            <p>1994 - 1999</p>
+            <p>B.A. in Business Administration: Management</p>
+            <h4></h4>
+            <h4 className="font-semibold">1994 - 1999</h4>
           </div>
-          <div className="text-center px-8 border-t md:border-0 py-6">
+          <div className="text-center px-8 py-6 border rounded-lg border-coral-red">
             <div className="w-16 h-16 flex justify-center items-center bg-coral-red rounded-full mx-auto">
               <img src={wifi.src} className="w-8 h-8 block mx-auto" />
             </div>
-            <h3>Online Eğitim</h3>
-            <p>Yazılım</p>
-            <p>2006 - 2023</p>
+            <h3>Self-Taught Programmer</h3>
+            <h4 className="font-semibold">Since 2006</h4>
           </div>
-          <div className="text-center px-8 border-t md:border-0 py-4">
+          <div className="text-center px-8 py-4">
             <img
               src="https://upload.wikimedia.org/wikipedia/tr/9/92/Istanbul_Universitesi.png"
               className="w-16 h-16 block mx-auto"
             />
             <h3>İstanbul Üniversitesi</h3>
-            <p>YBS | AUZEF</p>
-            <p>1999 - 2024</p>
+            <p>B.S. in Management Information Systems (MIS) </p>
+            <h4 className="font-semibold">2019 - 2024</h4>
           </div>
         </div>
       </div>
