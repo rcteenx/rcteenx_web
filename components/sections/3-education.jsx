@@ -1,4 +1,4 @@
-import { info, wifi } from "@/public/assets/bs-icons";
+import IconDynamic from "@/components/icons/dynamicIcon";
 
 const Education = () => {
   return (
@@ -31,7 +31,12 @@ const Education = () => {
           </div>
           <div className="text-center px-8 py-6 border rounded-lg border-coral-red">
             <div className="w-16 h-16 flex justify-center items-center bg-coral-red rounded-full mx-auto">
-              <img src={wifi.src} className="w-8 h-8 block mx-auto" />
+              {/* <img src={wifi.src} className="w-8 h-8 block mx-auto" /> */}
+              <IconDynamic
+                icon="wifi"
+                svgClass="h-8 w-8"
+                svgStrokeColor="white"
+              />
             </div>
             <h3>Self-Taught Programmer</h3>
             <h4 className="font-semibold">Since 2006</h4>

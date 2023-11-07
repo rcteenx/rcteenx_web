@@ -1,16 +1,4 @@
 import {
-  facebook,
-  github,
-  instagram,
-  linkedin,
-  reviews,
-  shieldTick,
-  support,
-  truckFast,
-  twitter,
-  webpage,
-} from "@/public/assets/icons";
-import {
   customer1,
   customer2,
   web1,
@@ -43,7 +31,7 @@ export const contHero = {
   span: "ve Nasıl Geliştirilir",
   desc: "Stratejik hedefler doğrultusunda, bilinçli olarak yapılandırılmamış dijital kaynaklar, telafisi zor olan fırsat kayıplarına neden oluyor.",
   btn1: "İletişim",
-  btn2: "Bilgi",
+  btn2: "CV",
   info: 'Web sayfalarınız, arama motoru, sosyal medya ve diğer platformlar aracılığıyla online ortamda yaratlan izlenimlerin bütünlüğü "dijtial varlık"ımızı oluşturur.',
   quote:
     "Ziyaretçilerinizin yüzde kaçı sizinle temas kuruyor ve müşteriniz oluyor?",
@@ -171,24 +159,61 @@ export const reviewsX = [
   },
 ];
 export const footerLinks = [
-  // {
-  //   title: "Ürünler",
-  //   links: [
-  //     { name: "Hazır Site", link: "/" },
-  //     { name: "Hazır Site 2", link: "/" },
-  //     { name: "Hazır Site 3 ", link: "/" },
-  //     { name: "Hazır Site 4", link: "/" },
-  //     { name: "Hazır Site 5", link: "/" },
-  //   ],
-  // },
   {
-    title: "Referans Sayfalar...",
+    title: "Tutorials",
     links: [
-      // { name: "CV", link: "/cv" },
-      // { name: "Sık Sorulan Sorular", link: "/" },
-      // { name: "Tasarım Süreci", link: "/" },
-      // { name: "100% Garanti", link: "/" },
-      // { name: "Ödeme", link: "/" },
+      { name: "Bookmark", link: "/tutorials/tailwind/bookmark/index.html" },
+      { name: "Clipboard", link: "/tutorials/tailwind/clipboard/index.html" },
+      { name: "Fylo", link: "/tutorials/tailwind/fylo/index.html" },
+      {
+        name: "Instagram UI Clone",
+        link: "/tutorials/tailwind/instagram_ui_clone/index.html",
+      },
+      {
+        name: "Loopstudios",
+        link: "/tutorials/tailwind/loopstudios/index.html",
+      },
+      {
+        name: "Shortly",
+        link: "/tutorials/tailwind/shortly/index.html",
+      },
+      {
+        name: "Tesla UI Clone",
+        link: "/tutorials/tailwind/tesla_ui_clone/index.html",
+      },
+      {
+        name: "Testimonial",
+        link: "/tutorials/tailwind/testimonial/index.html",
+      },
+      {
+        name: "Webees",
+        link: "/tutorials/tailwind/webees-tech/index.html",
+      },
+    ],
+  },
+  {
+    title: "Components",
+    links: [
+      {
+        name: "Subscribe Email",
+        link: "tutorials/web-parts/email-subscribe/index.html",
+      },
+      {
+        name: "Image Gallery",
+        link: "/tutorials/web-parts/image-gallery/index.html",
+      },
+      {
+        name: "Login Modal",
+        link: "/tutorials/web-parts/login-modal/index.html",
+      },
+      {
+        name: "Pricing Cards",
+        link: "/tutorials/web-parts/pricing-cards/index.html",
+      },
+      {
+        name: "Product Modal",
+        link: "/tutorials/web-parts/product-modal/index.html",
+      },
     ],
   },
   {
@@ -202,13 +227,21 @@ export const footerLinks = [
 
 export const socialMedia = [
   // { src: instagram, alt: "instagram logo" },
-  { src: github, alt: "github logo", link: "https://github.com/rcteenx" },
   {
-    src: linkedin,
+    svgSlug: "github",
+    alt: "github logo",
+    link: "https://github.com/rcteenx",
+  },
+  {
+    svgSlug: "linkedin",
     alt: "linkedin logo",
     link: "https://www.linkedin.com/in/rcteenx",
   },
-  { src: twitter, alt: "twitter logo", link: "https://twitter.com/rcteenx" },
+  {
+    svgSlug: "twitter",
+    alt: "twitter logo",
+    link: "https://twitter.com/rcteenx",
+  },
 ];
 
 export const skillBar = [

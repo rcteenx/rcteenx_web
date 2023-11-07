@@ -14,7 +14,9 @@ const FooterLinks = () => {
                 className="mt-1 font-montserrat text-sm leading-normal text-white-400 hover:text-slate-gray"
                 key={link.name}
               >
-                <a href={link.link}>{link.name}</a>
+                <a href={link.link} target="_blank">
+                  {link.name}
+                </a>
               </li>
             ))}
           </ul>

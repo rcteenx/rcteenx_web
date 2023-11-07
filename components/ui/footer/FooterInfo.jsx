@@ -1,5 +1,6 @@
 import { footerLogo } from "@/public/assets/images";
 import { socialMedia } from "@/content/data";
+import IconDynamic from "@/components/icons/dynamicIcon";
 
 const FooterInfo = () => {
   return (
@@ -22,7 +23,12 @@ const FooterInfo = () => {
             key={icon.alt}
           >
             <a href={icon.link} target="_blank">
-              <img src={icon.src.src} alt={icon.alt} width={24} height={24} />
+              {/* <img src={icon.src.src} alt={icon.alt} width={24} height={24} /> */}
+              <IconDynamic
+                icon={icon.svgSlug}
+                svgClass="h-6 w-6"
+                svgFill="black"
+              />
             </a>
           </div>
         ))}

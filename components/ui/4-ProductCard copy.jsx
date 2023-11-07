@@ -1,4 +1,4 @@
-import { star } from "@/public/assets/icons";
+import IconDynamic from "@/components/icons/dynamicIcon";
 
 const ProductCard = ({ imgURL, rating, name, price }) => {
   return (
@@ -15,7 +15,7 @@ const ProductCard = ({ imgURL, rating, name, price }) => {
         </span>
       </h3>
       <div className="flex justify-center gap-2">
-        <img src={star.src} alt="rating icon" width={24} height={24} />
+        <IconDynamic icon="star" svgClass="h-6 w-6" />
         <p className="font-montserrat text-slate-gray">({rating})</p>
       </div>
     </div>

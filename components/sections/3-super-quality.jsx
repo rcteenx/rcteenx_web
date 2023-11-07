@@ -1,6 +1,7 @@
 import { contAbout } from "@/content/data";
 import { arrowRight } from "@/public/assets/icons";
 import { about } from "@/public/assets/images";
+import IconDynamic from "@/components/icons/dynamicIcon";
 
 const SuperQuality = () => {
   return (
@@ -20,11 +21,7 @@ const SuperQuality = () => {
         <p className="mt-4 info-text">{contAbout.desc2}</p>
         <a href="#" className="my-4 mr-auto btn-hero bg-coral-red text-white">
           {contAbout.btn}
-          <img
-            src={arrowRight.src}
-            alt="arrow right icon"
-            className="ml-2 rounded-full bg-white w-8 h-8"
-          />
+          <IconDynamic icon="arrow-right" svgClass="h-8 w-8" svgColor="red" />
         </a>
       </div>
       <img

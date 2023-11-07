@@ -1,3 +1,5 @@
+import IconDynamic from "@/components/icons/dynamicIcon";
+
 const TempHero = ({ contHero }) => {
   return (
     <section
@@ -25,19 +27,16 @@ const TempHero = ({ contHero }) => {
         <div className="flex my-8 flex-row space-x-4 justify-center xl:justify-start">
           <a href="#footer" className="btn-hero bg-coral-red text-white">
             {contHero.btn1}
-            <img
-              src={arrowRight.src}
-              alt="arrow right icon"
-              className="ml-2 rounded-full bg-white w-8 h-8"
-            />
+            <IconDynamic icon="arrow-right" svgClass="h-8 w-8" svgColor="red" />
           </a>
           <a href="#" className="btn-hero bg-white text-black">
             {contHero.btn2}
-            <img
+            {/* <img
               src={info.src}
               alt="info icon"
               className="ml-2 rounded-full bg-white w-8 h-8"
-            />
+            /> */}
+            <IconDynamic icon="info" svgClass="h-8 w-8" />
           </a>
         </div>
         <p className="text-xs mb-8 font-montserrat text-slate-gray leading-4 ">

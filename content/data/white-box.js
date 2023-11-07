@@ -1,48 +1,36 @@
-import {
-  ads,
-  blog,
-  contact,
-  customer,
-  customerReview,
-  landingPage,
-  socialMedia,
-  webPage,
-  visitor,
-} from "@/public/assets/bs-icons";
-
 export const digitalPresenceAreas = [
   {
-    imgURL: webPage,
+    svgSlug: "web",
     label: "Web Sitesi",
     subtext:
       "Web siteni aylık ortalama kaç kişi ziyaret ediyor, hangi kanallardan geliyor?",
   },
   {
-    imgURL: blog,
+    svgSlug: "blog",
     label: "Bloglar",
     subtext:
       "Dijital kaynaklardan size ulaşan kaç kişi, para kazandıran müşteriye dönüşüyor?",
   },
   {
-    imgURL: landingPage,
+    svgSlug: "landing",
     label: "Landing Pages",
     subtext:
       "Belirli amaçlarla oluşturulmuş açılış sayfaları, stratejik dijital duruşunuzla uyumlu olmalı.",
   },
   {
-    imgURL: ads,
+    svgSlug: "ads",
     label: "Dijital Reklamlar",
     subtext:
       "Dijital kaynaklardan size ulaşan kaç kişi, para kazandıran müşteriye dönüşüyor?",
   },
   {
-    imgURL: socialMedia,
+    svgSlug: "social",
     label: "Sosyal Medya",
     subtext:
       "Ziyaretçilerin sitenizde kalış süresi ve ortalama sayfa dolaşma sayısı?",
   },
   {
-    imgURL: customerReview,
+    svgSlug: "review",
     label: "Müşteri Yorumları",
     subtext:
       "Dijital kaynaklardan size ulaşan kaç kişi, para kazandıran müşteriye dönüşüyor?",
@@ -51,25 +39,31 @@ export const digitalPresenceAreas = [
 
 export const digitalSkills = [
   {
-    imgURL: contact,
+    svgSlug: "contact",
+    label: "Sürekli Öğrenme",
+    subtext:
+      "Modern teknoloji dünyası sürekli gelişiyor. Güncel kalabilmek için sürekli öğrenme süreci devam etmeli.",
+  },
+  {
+    svgSlug: "contact",
     label: "Yazılım",
     subtext:
       "Son nesil framework ve standartlara dayalı ve sürdürülebilir kodlar.",
   },
   {
-    imgURL: contact,
+    svgSlug: "contact",
     label: "E-Marketing",
     subtext:
       "Ticari anlamda geri dönüşümü takip edilen etkin ve etkili dijital çözümler.",
   },
   {
-    imgURL: contact,
+    svgSlug: "contact",
     label: "İşletme",
     subtext:
       "Tüm projelerin işletme ve hedefleri doğrultusunda ele alınması ve yönetilmesi.",
   },
   {
-    imgURL: contact,
+    svgSlug: "contact",
     label: "Yönetim Bilişim Sistemleri",
     subtext:
       "İnsan, teknoloji, sistem teorisi ve bilgi yönetiminin bir arada ele alınması.",
@@ -78,19 +72,19 @@ export const digitalSkills = [
 
 export const targetMarket = [
   {
-    imgURL: visitor,
+    svgSlug: "visitor",
     label: "1- Ziyaretçi",
     subtext:
       "Web siteni aylık ortalama kaç kişi ziyaret ediyor, hangi kanallardan geliyor?",
   },
   {
-    imgURL: contact,
+    svgSlug: "contact",
     label: "2- Etkileşim",
     subtext:
       "Ziyaretçilerin sitenizde kalış süresi ve ortalama sayfa dolaşma sayısı?",
   },
   {
-    imgURL: customer,
+    svgSlug: "customer",
     label: "3- Müşteri",
     subtext:
       "Dijital kaynaklardan size ulaşan kaç kişi, para kazandıran müşteriye dönüşüyor?",
@@ -99,19 +93,19 @@ export const targetMarket = [
 
 export const services = [
   {
-    imgURL: contact,
+    svgSlug: "contact",
     label: "Hızlı Sayfa Geçişli",
     subtext:
       "Sayfa geçişlerini farkedilmeyecek hızda yapan, akıcı çalışan uygulamalar.",
   },
   {
-    imgURL: contact,
+    svgSlug: "contact",
     label: "Responsif Tasarım",
     subtext:
       "Telefon, tablet ya da bilgisayar ekranlarına uyumlu sayfalar üreten kodlama.",
   },
   {
-    imgURL: contact,
+    svgSlug: "contact",
     label: "Semantik Kodlama",
     subtext:
       "İçeriklerin arama motorları ve ziyaretçilere uygun düzenlenmesi ve kodlanması.",

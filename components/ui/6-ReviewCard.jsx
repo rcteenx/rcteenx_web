@@ -1,4 +1,4 @@
-import { star } from "@/public/assets/icons";
+import IconDynamic from "@/components/icons/dynamicIcon";
 
 const ReviewCard = ({ imgURL, customerName, rating, feedback }) => {
   return (
@@ -10,12 +10,10 @@ const ReviewCard = ({ imgURL, customerName, rating, feedback }) => {
       />
       <p className="mt-2 max-w-sm info-text">{feedback}</p>
       <p className="text-xl font-montserrat text-slate-gray font-semibold">
-        <img
-          src={star.src}
-          width={24}
-          height={24}
+        <IconDynamic
+          icon="star"
           alt="rating yıldız"
-          className="inline"
+          svgClass="h-6 w-6 inline"
         />
         {` (${rating})`}
       </p>

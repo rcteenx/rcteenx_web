@@ -1,6 +1,7 @@
 import { contOffer } from "@/content/data";
 import { info, arrowRight } from "@/public/assets/icons";
 import { discount } from "@/public/assets/images";
+import IconDynamic from "@/components/icons/dynamicIcon";
 
 const Offer = () => {
   return (
@@ -16,11 +17,7 @@ const Offer = () => {
         <div className="mt-4 flex flex-row space-x-4">
           {/* <a href="#" className="btn-hero bg-coral-red text-white">
             {contOffer.btn1}
-            <img
-              src={arrowRight.src}
-              alt="arrow right icon"
-              className="ml-2 rounded-full bg-white w-8 h-8"
-            />
+            <IconDynamic icon="arrow-right" svgClass="h-8 w-8" svgColor="red" />
           </a>
           <a href="#" className="btn-hero bg-white text-black">
             {contOffer.btn2}
@@ -29,6 +26,7 @@ const Offer = () => {
               alt="arrow right icon"
               className="ml-2 rounded-full bg-white w-8 h-8"
             />
+            <IconDynamic icon="info" svgClass="h-8 w-8" />
           </a> */}
         </div>
       </div>

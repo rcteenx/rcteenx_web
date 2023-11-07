@@ -1,6 +1,6 @@
 import { contHero, statistics } from "@/content/data";
-import { info, arrowRight } from "@/public/assets/icons";
 import { rcHero } from "@/public/assets/images";
+import IconDynamic from "@/components/icons/dynamicIcon";
 
 const Hero = () => {
   return (
@@ -29,19 +29,21 @@ const Hero = () => {
         <div className="flex my-8 flex-row space-x-4 justify-center xl:justify-start">
           <a href="#footer" className="btn-hero bg-coral-red text-white">
             {contHero.btn1}
-            <img
-              src={arrowRight.src}
-              alt="arrow right icon"
-              className="ml-2 rounded-full bg-white w-8 h-8"
-            />
+            {/* <IconArrowRight color="red" className="h-8 w-8" /> */}
+            <IconDynamic icon="arrow-right" svgClass="h-8 w-8" svgColor="red" />
           </a>
-          <a href="#" className="btn-hero bg-white text-black">
+          <a
+            href="https://rcteenx.com/cv/index.html"
+            className="btn-hero bg-white text-coral-red hover:border-b"
+          >
+            <div className="bg-coral-red rounded-full p-1 mr-2">
+              <IconDynamic
+                icon="cv"
+                svgClass="h-6 w-6"
+                svgStrokeColor="white"
+              />
+            </div>
             {contHero.btn2}
-            <img
-              src={info.src}
-              alt="info icon"
-              className="ml-2 rounded-full bg-white w-8 h-8"
-            />
           </a>
         </div>
         <p className="text-xs mb-8 font-montserrat text-slate-gray leading-4 ">
