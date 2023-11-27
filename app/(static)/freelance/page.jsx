@@ -23,8 +23,6 @@ export default async function HomePage() {
     <>
       <Header id="4" />
       <main>
-        {/* <h1>{sPage.title}</h1>
-      <h4>{sPage.description}</h4> */}
         <FreelanceHero />
         <Services />
         <SuperQuality />

@@ -1,5 +1,3 @@
-import { copyrightSign } from "@/public/assets/icons";
-
 const FooterCopyRight = () => {
   return (
     <div className="mt-8 px-2 py-4 flex justify-between text-white-400 border-t">

@@ -8,11 +8,12 @@ const skipDir = "_next";
 
 let files = getFilesRecursively(getDirPath, skipDir);
 var filteredFiles = files.filter((file) => file.endsWith(".txt"));
+// console.log(filteredFiles);
 
 // Just changed to remove index being changed to .html.txt
-var filteredOtherFiles = filteredFiles
-  .filter((file) => !file.includes("index"))
-  .map((file) => file.slice(0, -".txt".length));
+var filteredOtherFiles = filteredFiles.map((file) =>
+  file.slice(0, -".txt".length)
+);
 
 filteredOtherFiles.forEach((file) => {
   if (!file.endsWith(".html")) {
@@ -20,7 +21,7 @@ filteredOtherFiles.forEach((file) => {
       if (err) {
         console.log(err);
       } else {
-        // console.log("File names changed successfully");
+        console.log("changed -" + file.toLowerCase());
       }
     });
   }

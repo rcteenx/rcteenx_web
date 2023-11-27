@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getStaticFile } from "@/lib/static";
 import Header from "@/components/ui/header/static";
 import Footer from "@/components/ui/footer";

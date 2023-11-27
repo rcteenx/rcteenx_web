@@ -15,7 +15,11 @@ export default function HeaderStaticNav({ id }) {
                 id === n.id ? "text-coral-red" : "2"
               } `}
             >
+              <a href={`/${n.href}`}>{n.label}</a>
+              {/* We have problem at script next links!
               <Link href={`/${n.href + process.env.file_ext}`}>{n.label}</Link>
+               */}
+              {/* <a href={`/${n.href + process.env.file_ext}`}>{n.label}</a> */}
             </li>
           ))}
         </ul>

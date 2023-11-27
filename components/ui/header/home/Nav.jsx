@@ -13,7 +13,7 @@ export default function HeaderHomeNav() {
               key={n.href}
               className="first:text-coral-red border-b border-b-white hover:border-b-coral-red"
             >
-              <Link href={`/${n.href + process.env.file_ext}`}>{n.label}</Link>
+              <Link href={`/${n.href}`}>{n.label}</Link>
             </li>
           ))}
         </ul>

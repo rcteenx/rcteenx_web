@@ -1,3 +1,4 @@
+import Link from "next/link";
 import smd from "@/content/data/siteMetaData";
 
 // import Header from "@/components/ui/header/home";

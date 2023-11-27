@@ -1,5 +1,4 @@
 import { contAbout } from "@/content/data";
-import { arrowRight } from "@/public/assets/icons";
 import { about } from "@/public/assets/images";
 import IconDynamic from "@/components/icons/dynamicIcon";
 

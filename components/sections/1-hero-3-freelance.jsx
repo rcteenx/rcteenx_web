@@ -1,5 +1,4 @@
 import { contFreelanceHero, statisticsFreelance } from "@/content/data";
-import { info, arrowRight } from "@/public/assets/icons";
 import { rcHero } from "@/public/assets/images";
 import IconDynamic from "@/components/icons/dynamicIcon";
 

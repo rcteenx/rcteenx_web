@@ -1,5 +1,4 @@
 import { contOffer } from "@/content/data";
-import { info, arrowRight } from "@/public/assets/icons";
 import { discount } from "@/public/assets/images";
 import IconDynamic from "@/components/icons/dynamicIcon";
 
